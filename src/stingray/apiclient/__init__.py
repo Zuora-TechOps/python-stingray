@@ -61,6 +61,9 @@ class Client(object):
             supported_versions = self.get_supported_versions()
             self.api_version = sorted(supported_versions)[-1]
 
+    def __repr__(self):
+        return '<Stingray API Client: {0}>'.format(self.api_host)
+
     def _connection_error(self, error):
         raise StingrayAPIClientError(
             "Unable to connect to Stingray device {0}: {1}".format(
@@ -239,8 +242,7 @@ class Client(object):
         Returns:
             (StatusAPI)
         """
-        return StatusAPI(self.api_host, self.api_port, self.api_user,
-                         self.api_password, self.api_version, self.ssl_verify)
+        return StatusAPI.from_client(self)
 
 
 class StatusAPI(Client):
@@ -258,6 +260,17 @@ class StatusAPI(Client):
             raise StingrayAPIClientError(
                 "API version 1.0 does not support the status endpoint"
             )
+
+    def __repr__(self):
+        return '<Stingray StatusAPI: {0}>'.format(self.api_host)
+
+    @classmethod
+    def from_client(cls, client):
+        status = cls(host=client.api_host, port=client.api_port,
+                     user=client.api_user, password=client.api_password,
+                     api_version=client.api_version,
+                     ssl_verify=client.ssl_verify)
+        return status
 
     def backups(self):
         """

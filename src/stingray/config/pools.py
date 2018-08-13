@@ -15,6 +15,17 @@ class Pools(Client):
         for pool in pools_list['children']:
             self.pools[pool['name']] = pool['href']
 
+    def __repr__(self):
+        return '<Stingray Pools: {0}>'.format(self.api_host)
+
+    @classmethod
+    def from_client(cls, client):
+        pools = cls(host=client.api_host, port=client.api_port,
+                    user=client.api_user, password=client.api_password,
+                    api_version=client.api_version,
+                    ssl_verify=client.ssl_verify)
+        return pools
+
     def get(self, pool):
         """
         Get a Pool object for the request pool.
@@ -27,9 +38,8 @@ class Pools(Client):
         """
         try:
             pool_properties = self._api_get(self.pools[pool])
-            return Pool(pool, self.pools[pool], pool_properties['properties'],
-                        self.api_host, self.api_port, self.api_user,
-                        self.api_password, self.api_version, self.ssl_verify)
+            return Pool.from_client(self, pool, self.pools[pool],
+                                    pool_properties['properties'])
         except KeyError:
             raise StingrayAPIClientError(
                 "Pool {0} not found".format(pool)
@@ -128,6 +138,9 @@ class Pool(Client):
 
         self.status_api = self.get_status()
 
+    def __repr__(self):
+        return '<Stingray Pool {0}: {1}>'.format(self.name, self.api_host)
+
     def _bad_node(self, node):
         raise StingrayAPIClientError(
             "Node {0} is not a member of this pool".format(node)
@@ -139,6 +152,14 @@ class Pool(Client):
         """
         updated = self._api_put(self.config_path, self.properties)
         self.properties = updated['properties']
+
+    @classmethod
+    def from_client(cls, client, pool_name, pool_path, pool_properties):
+        pool = cls(pool_name, pool_path, pool_properties, host=client.api_host,
+                   port=client.api_port, user=client.api_user,
+                   password=client.api_password, api_version=client.api_version,
+                   ssl_verify=client.ssl_verify)
+        return pool
 
     def nodes_status(self):
         """
