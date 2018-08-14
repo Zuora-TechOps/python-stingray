@@ -52,8 +52,14 @@ class Pools(Client):
         Arguments:
             pool (str): The name of the pool to add
             nodes (list): List of nodes for the pool
-            pool_props: Additional arguments to set properties of the pool
-                        at time of creation.
+            pool_props (dict): Additional arguments to set properties of the pool
+                        at time of creation. Must be a dict in the form of:
+                        {
+                          section: {
+                            key: value
+                          }
+                        }
+
 
         Returns:
             (Pool): The new pool
@@ -78,7 +84,9 @@ class Pools(Client):
         )
 
         for prop in pool_props:
-            pool_data['properties'].update(prop)
+            pool_data['properties'].setdefault(prop, dict())
+            for key, value in pool_props[prop].iteritems():
+                pool_data['properties'][prop][key] = value
 
         for node in nodes:
             pool_data['properties']['basic']['nodes_table'].append(dict(
@@ -145,13 +153,6 @@ class Pool(Client):
         raise StingrayAPIClientError(
             "Node {0} is not a member of this pool".format(node)
         )
-
-    def _update(self):
-        """
-        Update the properties for the pool on the load balancer
-        """
-        updated = self._api_put(self.config_path, self.properties)
-        self.properties = updated['properties']
 
     @classmethod
     def from_client(cls, client, pool_name, pool_path, pool_properties):

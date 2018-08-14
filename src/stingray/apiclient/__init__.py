@@ -61,6 +61,8 @@ class Client(object):
             supported_versions = self.get_supported_versions()
             self.api_version = sorted(supported_versions)[-1]
 
+        self.config_path = '{0}/config/active/'.format(self.api_version)
+
     def __repr__(self):
         return '<Stingray API Client: {0}>'.format(self.api_host)
 
@@ -140,7 +142,7 @@ class Client(object):
                 'https://{0}:{1}/api/tm/{2}'.format(
                     self.api_host,
                     self.api_port,
-                    path
+                    requests.utils.requote_uri(path)
                 ),
                 headers=self.api_headers,
                 verify=self.ssl_verify,
@@ -166,7 +168,7 @@ class Client(object):
                 'https://{0}:{1}/api/tm/{2}'.format(
                     self.api_host,
                     self.api_port,
-                    requests.utils.quote(path)
+                    requests.utils.requote_uri(path)
                 ),
                 headers=self.api_headers,
                 verify=self.ssl_verify,
@@ -192,7 +194,7 @@ class Client(object):
                 'https://{0}:{1}/api/tm/{2}'.format(
                     self.api_host,
                     self.api_port,
-                    requests.utils.quote(path)
+                    requests.utils.requote_uri(path)
                 ),
                 headers=self.api_headers,
                 verify=self.ssl_verify,
@@ -204,6 +206,14 @@ class Client(object):
                 return dict(success="Resource has been removed")
 
             return self._handle_response(response)
+
+    def _update(self):
+        """
+        Convenience method to pdate the properties for an
+        endpoint on the load balancer
+        """
+        updated = self._api_put(self.config_path, dict(properties=self.properties))
+        self.properties = updated['properties']
 
     def get_supported_versions(self):
         """
