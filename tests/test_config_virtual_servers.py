@@ -103,6 +103,28 @@ class TestStingrayVirtualServers(object):
         assert len(vss.virtual_servers) == 4
         assert vss.virtual_servers['Virtual Server 2'] == "/api/tm/5.2/config/active/virtual_servers/Virtual%20Server%202"
 
+    def test_config_virtual_servers_get(self, responses):
+        base_response(responses)
+
+        responses.add(
+            responses.GET,
+            '{0}virtual_servers/Virtual%20Server%201'.format(base),
+            json=cvsr.get_vs
+        )
+
+        vss = VirtualServers(**stingray_args)
+        vs = vss.get('Virtual Server 1')
+        assert isinstance(vs, VirtualServer)
+
+    def test_config_virtual_servers_get_bad(self, responses):
+        base_response(responses)
+
+        vss = VirtualServers(**stingray_args)
+        with pytest.raises(
+                StingrayAPIClientError,
+                match="Virtual Server BadServer not found"):
+            vss.get('BadServer')
+
     def test_config_virtual_servers_add(self, responses):
         base_response(responses)
 
@@ -113,6 +135,7 @@ class TestStingrayVirtualServers(object):
         assert isinstance(vs, VirtualServer)
         assert vs.properties['basic']['pool'] == "Pool1"
         assert vs.properties['basic']['port'] == 8000
+        assert 'Virtual Server 1' in vss.virtual_servers
 
     def test_config_virtual_servers_add_v1(self, responses):
         base_response_v1(responses)
@@ -124,6 +147,7 @@ class TestStingrayVirtualServers(object):
         assert isinstance(vs, VirtualServer)
         assert vs.properties['basic']['pool'] == "Pool1"
         assert vs.properties['basic']['port'] == 8000
+        assert 'Virtual Server 1' in vss.virtual_servers
 
     def test_config_virtual_servers_add_with_props(self, responses):
         base_response(responses)

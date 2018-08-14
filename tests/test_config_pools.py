@@ -108,6 +108,7 @@ class TestStingrayPools(object):
         new_pool = pools.add('Pool4', nodes=['10.0.0.1:8000'])
         assert isinstance(new_pool, Pool)
         assert new_pool.nodes.get('10.0.0.1:8000', False)
+        assert 'Pool4' in pools.pools
 
     def test_config_pools_add_old(self, responses):
         base_response_old(responses)
@@ -123,6 +124,7 @@ class TestStingrayPools(object):
         assert isinstance(new_pool, Pool)
         assert new_pool.nodes.get('10.0.0.1:8000', False)
         assert new_pool.properties['basic']['nodes'] == ['10.0.0.1:8000', '10.0.0.2:8000']
+        assert 'Pool4' in pools.pools
 
     def test_config_pools_add_no_nodes(self, responses):
         base_response(responses)
@@ -147,13 +149,14 @@ class TestStingrayPools(object):
 
         responses.add(
             responses.DELETE,
-            '{0}Pool4'.format(pools_base),
+            '{0}Pool1'.format(pools_base),
             status=204
         )
 
         pools = Pools(**stingray_args)
-        del_response = pools.delete('Pool4')
+        del_response = pools.delete('Pool1')
         assert del_response['success'] == "Resource has been removed"
+        assert 'Pool1' not in pools.pools
 
 
 class TestStingrayPool(object):

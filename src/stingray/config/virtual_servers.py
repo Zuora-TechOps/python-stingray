@@ -91,12 +91,15 @@ class VirtualServers(Client):
             virtual_server_data
         )
 
-        return VirtualServer.from_client(
+        vs = VirtualServer.from_client(
             self,
             server,
             server_path='{0}{1}'.format(self.config_path, server),
             server_properties=add_virtual_server_response['properties']
         )
+        self.virtual_servers[server] = vs.config_path
+
+        return vs
 
     def delete(self, server):
         """
@@ -108,7 +111,13 @@ class VirtualServers(Client):
         Returns:
             (dict): Response from the _api_delete method
         """
-        return self._api_delete('{0}{1}'.format(self.config_path, server))
+        delete_response = self._api_delete('{0}{1}'.format(
+            self.config_path, server))
+
+        if 'success' in delete_response:
+            self.virtual_servers.pop(server)
+
+        return delete_response
 
 
 class VirtualServer(Client):

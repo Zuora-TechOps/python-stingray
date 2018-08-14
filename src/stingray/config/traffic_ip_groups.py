@@ -115,6 +115,7 @@ class TrafficIPGroups(Client):
             group_properties=add_traffic_ip_group_response['properties']
         )
         self.traffic_ip_groups[group] = tig.config_path
+
         return tig
 
     def delete(self, group):

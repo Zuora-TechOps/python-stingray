@@ -37,9 +37,7 @@ class Pools(Client):
             (Pool): The requested pool
         """
         try:
-            pool_properties = self._api_get(self.pools[pool])
-            return Pool.from_client(self, pool, self.pools[pool],
-                                    pool_properties['properties'])
+            return Pool.from_client(self, pool, self.pools[pool])
         except KeyError:
             raise StingrayAPIClientError(
                 "Pool {0} not found".format(pool)
@@ -99,10 +97,13 @@ class Pools(Client):
             pool_data
         )
 
-        return Pool(pool, '{0}/{1}'.format(self.config_path, pool),
-                    add_pool_response['properties'], self.api_host,
-                    self.api_port, self.api_user, self.api_password,
-                    self.api_version, self.ssl_verify)
+        new_pool = Pool(pool, '{0}/{1}'.format(self.config_path, pool),
+                        add_pool_response['properties'], self.api_host,
+                        self.api_port, self.api_user, self.api_password,
+                        self.api_version, self.ssl_verify)
+        self.pools[pool] = new_pool.config_path
+
+        return new_pool
 
     def delete(self, pool):
         """
@@ -114,22 +115,39 @@ class Pools(Client):
         Returns:
             (dict): Response from the _api_delete method
         """
-        return self._api_delete('{0}{1}'.format(self.config_path, pool))
+        delete_response = self._api_delete('{0}{1}'.format(
+            self.config_path, pool))
+
+        if 'success' in delete_response:
+            self.pools.pop(pool)
+
+        return delete_response
 
 
 class Pool(Client):
     """
     Class for interacting with individual pools via the REST API
     """
-    def __init__(self, pool_name, pool_path, pool_properties, host=None,
+    def __init__(self, pool_name, pool_path, pool_properties=None, host=None,
                  port=None, user=None, password=None, api_version=None,
                  ssl_verify=None):
         super(Pool, self).__init__(host, port, user, password,
                                    api_version, ssl_verify)
-        self.config_path = pool_path
         self.name = pool_name
-        self.properties = pool_properties
+
+        if pool_path:
+            self.config_path = pool_path
+        else:
+            self.config_path = '{0}/config/active/pools/{1}'.format(
+                self.api_version,
+                self.name
+            )
         self.nodes = dict()
+        if pool_properties:
+            self.properties = pool_properties
+        else:
+            pool_properties = self._api_get(self.config_path)
+            self.properties = pool_properties['properties']
 
         # API versions 1.0 and 2.0 use a different structure for the pool
         # properties to denote active, draining, and disabled nodes.
@@ -155,7 +173,7 @@ class Pool(Client):
         )
 
     @classmethod
-    def from_client(cls, client, pool_name, pool_path, pool_properties):
+    def from_client(cls, client, pool_name, pool_path=None, pool_properties=None):
         pool = cls(pool_name, pool_path, pool_properties, host=client.api_host,
                    port=client.api_port, user=client.api_user,
                    password=client.api_password, api_version=client.api_version,
