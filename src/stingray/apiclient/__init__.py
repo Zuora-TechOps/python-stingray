@@ -30,7 +30,7 @@ class Client(object):
         or command line args.
 
         Arguments:
-            host (str): Stringray host to connect to
+            host (str): Stingray host to connect to
             port (str): Port for the REST API, defaults to 9070
             user (str): Stingray admin user
             password (str): Admin user password
@@ -45,8 +45,8 @@ class Client(object):
         self.api_port = port if port is not None else os.environ.get('STINGRAY_PORT', '9070')
         self.api_password = password if password is not None else os.environ.get('STINGRAY_PASSWORD', None)
         self.ssl_verify = ssl_verify if ssl_verify is not None else os.environ.get('STINGRAY_SSL_VERIFY', True)
+        self.api_version = api_version if api_version is not None else os.environ.get('STINGRAY_API_VERSION', None)
         self.api_headers = {"Content-Type": "application/json"}
-        self.api_version = api_version
 
         if self.api_user and self.api_password:
             self.api_headers.update(urllib3.make_headers(
@@ -207,12 +207,14 @@ class Client(object):
 
             return self._handle_response(response)
 
-    def _update(self):
+    def update(self):
         """
-        Convenience method to pdate the properties for an
+        Convenience method to update the properties for an
         endpoint on the load balancer
         """
-        updated = self._api_put(self.config_path, dict(properties=self.properties))
+        updated = self._api_put(
+            self.config_path, dict(properties=self.properties)
+        )
         self.properties = updated['properties']
 
     def get_supported_versions(self):
@@ -247,7 +249,7 @@ class Client(object):
 
     def get_status(self):
         """
-        Get a status object for the REST API status/local_tm/ endpoint.
+        Get a status object for the REST API ``status/local_tm/`` endpoint.
 
         Returns:
             (StatusAPI)
@@ -257,7 +259,8 @@ class Client(object):
 
 class StatusAPI(Client):
     """
-    Class for interacting with the status/local_tm/ endpoints
+    Class for interacting with the ``status/local_tm/`` endpoints. Not supported
+    in version 1.0 of the REST API
     """
     def __init__(self, host=None, port=None, user=None,
                  password=None, api_version=None, ssl_verify=None):

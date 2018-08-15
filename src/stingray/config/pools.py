@@ -50,14 +50,10 @@ class Pools(Client):
         Arguments:
             pool (str): The name of the pool to add
             nodes (list): List of nodes for the pool
-            pool_props (dict): Additional arguments to set properties of the pool
-                        at time of creation. Must be a dict in the form of:
-                        {
-                          section: {
-                            key: value
-                          }
-                        }
+            pool_props (dict): Additional arguments to set properties of the
+                pool at time of creation. Must be a dict in the form of: ::
 
+                {'section': {'key': 'value'}}
 
         Returns:
             (Pool): The new pool
@@ -186,15 +182,17 @@ class Pool(Client):
         node properties, some in the node statistics.
 
         Returns:
-            (dict): Nodes and their status, e.g.:
-                    {
-                      u'10.0.0.1': {
-                        'connections': 0,
-                        'health': u'alive',
-                        'requests': 0,
-                        'state': 'active'
-                      }
-                    }
+            (dict): Nodes and their status, e.g.: ::
+
+            {
+                u'10.0.0.1': {
+                    u'connections': 0,
+                    u'health': u'alive',
+                    u'requests': 0,
+                    u'state': u'active'
+                }
+            }
+
         """
         node_status = dict()
         for node, node_values in self.nodes.iteritems():
@@ -215,10 +213,10 @@ class Pool(Client):
 
         Arguments:
             node (str): The node to add. Must be in accepted pool node config
-                        format: <ip or dns name>:<port>
+                format: ``<ip or dns name>:<port>``
             state (str): active, draining, or disabled. Default is active
-                         because it should be pretty rare to add a node in
-                         any other state.
+                because it should be pretty rare to add a node in any
+                other state.
             priority (int): Load balancer priority for the node
             weight (int): Load balancer weight for the node
 
@@ -245,7 +243,7 @@ class Pool(Client):
             self.nodes[node] = self.properties['basic']['nodes_table'][-1]
 
         # Update the pool on the load balancer with the new properties
-        self._update()
+        self.update()
 
         return self.nodes_status()
 
@@ -274,7 +272,7 @@ class Pool(Client):
             elif drain_node['state'] == "active":
                 self.properties['basic']['nodes'].pop(self.properties['basic']['nodes'].index(node))
 
-        self._update()
+        self.update()
 
         return self.nodes_status()
 
@@ -303,7 +301,7 @@ class Pool(Client):
             elif disable_node['state'] == "active":
                 self.properties['basic']['nodes'].pop(self.properties['basic']['nodes'].index(node))
 
-        self._update()
+        self.update()
 
         return self.nodes_status()
 
@@ -332,7 +330,7 @@ class Pool(Client):
             elif enable_node['state'] == "disabled":
                 self.properties['basic']['disabled'].pop(self.properties['basic']['disabled'].index(node))
 
-        self._update()
+        self.update()
 
         return self.nodes_status()
 
@@ -367,7 +365,7 @@ class Pool(Client):
                     self.properties['basic']['nodes_table'].pop(i)
                     break
 
-        self._update()
+        self.update()
 
         return self.nodes_status()
 

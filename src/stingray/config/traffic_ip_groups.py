@@ -62,17 +62,15 @@ class TrafficIPGroups(Client):
             group (str): The traffic ip group name
             ipaddresses (list): IP addresses to assign to the group
             machines (list): Load balancers that can host the group's
-                             IP addresses. Default is the current load balancer.
+                IP addresses. Default is the current load balancer (or load
+                balancers if clustered).
             mode (str): Method used to distribute traffic across the cluster.
-                        Default is singlehosted
+                Default is ``singlehosted``
             group_props (dict): Additional arguments to set the properties
-                                of the traffic ip group at time of creation.
-                                Must be a dict in the form of:
-                                 {
-                                   section: {
-                                     key: value
-                                   }
-                                 }
+                of the traffic ip group at time of creation. Must be a
+                dict in the form of: ::
+
+                {'section': {'key': 'value'}}
 
         Returns:
             (TrafficIPGroup): The new traffic ip group

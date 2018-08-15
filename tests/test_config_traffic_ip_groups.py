@@ -170,7 +170,7 @@ class TestTrafficIPGroup(object):
 
         tig = TrafficIPGroup('www.example.com', **stingray_args)
         tig.properties['basic']['ip_assignment_mode'] = "alphabetic"
-        tig._update()
+        tig.update()
         assert tig.properties['basic']['ip_assignment_mode'] == "alphabetic"
 
     def test_config_traffic_ip_group_statistics(self, responses):

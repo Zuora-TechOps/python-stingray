@@ -223,7 +223,7 @@ class TestStingrayVirtualServer(object):
         vss = VirtualServers(**stingray_args)
         vs = vss.get('Virtual Server 1')
         vs.properties['basic']['connect_timeout'] = 120
-        vs._update()
+        vs.update()
         assert vs.properties['basic']['connect_timeout'] == 120
 
     def test_config_virtual_server_statistics(self, responses):

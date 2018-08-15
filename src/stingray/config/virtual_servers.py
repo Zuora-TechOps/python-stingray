@@ -61,13 +61,10 @@ class VirtualServers(Client):
             pool (str): The default pool to use for traffic
             port (int): The port to listen on
             server_props (dict): Additional arguments to set the properties
-                                 of the virtual server at time of creation.
-                                 Must be a dict in the form of:
-                                 {
-                                   section: {
-                                     key: value
-                                   }
-                                 }
+                of the virtual server at time of creation. Must be a dict
+                in the form of: ::
+
+                {'section': {'key': 'value'}}
 
         Returns:
             (VirtualServer): The new virtual server
