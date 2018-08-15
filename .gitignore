@@ -16,4 +16,6 @@ gen
 /docs/_build/*
 /.cache
 /.eggs
-.pytest_cache
+/.pytest_cache
+/.tox
+/build
