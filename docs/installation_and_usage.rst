@@ -4,7 +4,7 @@ Installing and Using the ``stingray`` Module
 Installation
 ------------
 
-``pip install stingray``
+``pip install python-stingray``
 
 Usage Examples
 --------------
