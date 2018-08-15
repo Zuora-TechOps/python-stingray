@@ -6,9 +6,9 @@
 Stingray/Zeus/Pulse Secure REST API client module
 =================================================
 
-``stingray`` is a python module for using the REST API provided by the Pulse
-Secure Virtual Traffic Manager load balancer, previously known as Stingray,
-Zeus, and Steelapp.
+``python-stingray`` is a python module for using the REST API provided by the
+Pulse Secure Virtual Traffic Manager load balancer, previously known as
+Stingray, Zeus, and Steelapp.
 
 .. toctree::
    :maxdepth: 2

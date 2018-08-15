@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.abspath(os.path.curdir), 'src'))
 from stingray import __version__, __release__
 
-name = 'stingray'
+name = 'python-stingray'
 
 setup(name=name,
       version=__release__,
@@ -13,7 +13,7 @@ setup(name=name,
       long_description="""
 Python module for interacting with the Stingray Load Balancer REST API.
 """,
-      url='https://github.com/discogestalt/stingray',
+      url='https://github.com/Zuora-TechOps/python-stingray',
       author='Mark Troyer',
       author_email='disco@blackops.io',
       license='Apache',
@@ -26,7 +26,7 @@ Python module for interacting with the Stingray Load Balancer REST API.
           'Topic :: Internet :: Proxy Servers',
           'Topic :: System :: Networking',
       ],
-      keywords='stingray zeus api',
+      keywords='stingray zeus steelapp vtm riverbed brocade api',
       packages=find_packages(where='src'),
       package_dir={'': 'src'},
       zip_safe=False,

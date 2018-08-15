@@ -1,4 +1,4 @@
-ZenossAPIClient
+python-stingray
 
 Copyright 2018 Zuora, Inc.
 
