@@ -98,7 +98,7 @@ class TrafficIPGroups(Client):
 
         for prop in group_props:
             traffic_ip_group_data['properties'].setdefault(prop, dict())
-            for key, value in group_props[prop].iteritems():
+            for key, value in group_props[prop].items():
                 traffic_ip_group_data['properties'][prop][key] = value
 
         add_traffic_ip_group_response = self._api_put(

@@ -1,61 +1,61 @@
 traffic_ip_groups = {
-    u'children': [
+    'children': [
         {
-            u'href': u'/api/tm/5.2/config/active/traffic_ip_groups/Default%20EIP',
-            u'name': u'Default EIP'
+            'href': '/api/tm/5.2/config/active/traffic_ip_groups/Default%20EIP',
+            'name': 'Default EIP'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/traffic_ip_groups/TLS%201.0%20Disabled',
-            u'name': u'TLS 1.0 Disabled'
+            'href': '/api/tm/5.2/config/active/traffic_ip_groups/TLS%201.0%20Disabled',
+            'name': 'TLS 1.0 Disabled'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/traffic_ip_groups/www.example.com',
-            u'name': u'www.example.com'
+            'href': '/api/tm/5.2/config/active/traffic_ip_groups/www.example.com',
+            'name': 'www.example.com'
         },
     ]
 }
 
 traffic_ip_group = {
-    u'properties': {
-        u'basic': {
-            u'backend_traffic_ips': [],
-            u'enabled': True,
-            u'hash_source_port': False,
-            u'ip_assignment_mode': u'balanced',
-            u'ip_mapping': [],
-            u'ipaddresses': [
-                u'192.168.100.1'
+    'properties': {
+        'basic': {
+            'backend_traffic_ips': [],
+            'enabled': True,
+            'hash_source_port': False,
+            'ip_assignment_mode': 'balanced',
+            'ip_mapping': [],
+            'ipaddresses': [
+                '192.168.100.1'
             ],
-            u'keeptogether': False,
-            u'location': 0,
-            u'machines': [
-                u'10.0.0.1'
+            'keeptogether': False,
+            'location': 0,
+            'machines': [
+                '10.0.0.1'
             ],
-            u'mode': u'ec2vpcelastic',
-            u'multicast': u'',
-            u'note': u'',
-            u'rhi_bgp_metric_base': 10,
-            u'rhi_bgp_passive_metric_offset': 10,
-            u'rhi_ospfv2_metric_base': 10,
-            u'rhi_ospfv2_passive_metric_offset': 10,
-            u'rhi_protocols': u'ospf',
-            u'slaves': []
+            'mode': 'ec2vpcelastic',
+            'multicast': '',
+            'note': '',
+            'rhi_bgp_metric_base': 10,
+            'rhi_bgp_passive_metric_offset': 10,
+            'rhi_ospfv2_metric_base': 10,
+            'rhi_ospfv2_passive_metric_offset': 10,
+            'rhi_protocols': 'ospf',
+            'slaves': []
         }
     }
 }
 
 traffic_ip_stats = {
-    u'statistics': {
-        u'state': u'lowered',
-        u'time': 730457300
+    'statistics': {
+        'state': 'lowered',
+        'time': 730457300
     }
 }
 
 traffic_managers = {
-    u'children': [
+    'children': [
         {
-            u'href': u'/api/tm/5.2/config/active/traffic_managers/10.0.0.1',
-            u'name': u'10.0.0.1'
+            'href': '/api/tm/5.2/config/active/traffic_managers/10.0.0.1',
+            'name': '10.0.0.1'
         }
     ]
 }

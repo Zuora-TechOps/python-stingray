@@ -1,525 +1,525 @@
 auth_error = {
-    u'error_id': u'auth.invalid',
-    u'error_text': u'User name or password was invalid'
+    'error_id': 'auth.invalid',
+    'error_text': 'User name or password was invalid'
 }
 
 config_endpoints = {
-    u'children': [
+    'children': [
         {
-            u'href': u'/api/tm/5.2/config/active/action_programs/',
-            u'name': u'action_programs'
+            'href': '/api/tm/5.2/config/active/action_programs/',
+            'name': 'action_programs'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/actions/',
-            u'name': u'actions'
+            'href': '/api/tm/5.2/config/active/actions/',
+            'name': 'actions'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/appliance/',
-            u'name': u'appliance'
+            'href': '/api/tm/5.2/config/active/appliance/',
+            'name': 'appliance'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/application_firewall',
-            u'name': u'application_firewall'
+            'href': '/api/tm/5.2/config/active/application_firewall',
+            'name': 'application_firewall'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/aptimizer/',
-            u'name': u'aptimizer'
+            'href': '/api/tm/5.2/config/active/aptimizer/',
+            'name': 'aptimizer'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/bandwidth/',
-            u'name': u'bandwidth'
+            'href': '/api/tm/5.2/config/active/bandwidth/',
+            'name': 'bandwidth'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/bgpneighbors/',
-            u'name': u'bgpneighbors'
+            'href': '/api/tm/5.2/config/active/bgpneighbors/',
+            'name': 'bgpneighbors'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/cloud_api_credentials/',
-            u'name': u'cloud_api_credentials'
+            'href': '/api/tm/5.2/config/active/cloud_api_credentials/',
+            'name': 'cloud_api_credentials'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/custom/',
-            u'name': u'custom'
+            'href': '/api/tm/5.2/config/active/custom/',
+            'name': 'custom'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/dns_server/',
-            u'name': u'dns_server'
+            'href': '/api/tm/5.2/config/active/dns_server/',
+            'name': 'dns_server'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/event_types/',
-            u'name': u'event_types'
+            'href': '/api/tm/5.2/config/active/event_types/',
+            'name': 'event_types'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/extra_files/',
-            u'name': u'extra_files'
+            'href': '/api/tm/5.2/config/active/extra_files/',
+            'name': 'extra_files'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/glb_services/',
-            u'name': u'glb_services'
+            'href': '/api/tm/5.2/config/active/glb_services/',
+            'name': 'glb_services'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/global_settings',
-            u'name': u'global_settings'
+            'href': '/api/tm/5.2/config/active/global_settings',
+            'name': 'global_settings'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/kerberos/',
-            u'name': u'kerberos'
+            'href': '/api/tm/5.2/config/active/kerberos/',
+            'name': 'kerberos'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/license_keys/',
-            u'name': u'license_keys'
+            'href': '/api/tm/5.2/config/active/license_keys/',
+            'name': 'license_keys'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/locations/',
-            u'name': u'locations'
+            'href': '/api/tm/5.2/config/active/locations/',
+            'name': 'locations'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/log_export/',
-            u'name': u'log_export'
+            'href': '/api/tm/5.2/config/active/log_export/',
+            'name': 'log_export'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/monitor_scripts/',
-            u'name': u'monitor_scripts'
+            'href': '/api/tm/5.2/config/active/monitor_scripts/',
+            'name': 'monitor_scripts'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/monitors/',
-            u'name': u'monitors'
+            'href': '/api/tm/5.2/config/active/monitors/',
+            'name': 'monitors'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/persistence/',
-            u'name': u'persistence'
+            'href': '/api/tm/5.2/config/active/persistence/',
+            'name': 'persistence'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/pools/',
-            u'name': u'pools'
+            'href': '/api/tm/5.2/config/active/pools/',
+            'name': 'pools'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/protection/',
-            u'name': u'protection'
+            'href': '/api/tm/5.2/config/active/protection/',
+            'name': 'protection'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/rate/',
-            u'name': u'rate'
+            'href': '/api/tm/5.2/config/active/rate/',
+            'name': 'rate'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/rule_authenticators/',
-            u'name': u'rule_authenticators'
+            'href': '/api/tm/5.2/config/active/rule_authenticators/',
+            'name': 'rule_authenticators'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/rules/',
-            u'name': u'rules'
+            'href': '/api/tm/5.2/config/active/rules/',
+            'name': 'rules'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/saml/',
-            u'name': u'saml'
+            'href': '/api/tm/5.2/config/active/saml/',
+            'name': 'saml'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/security',
-            u'name': u'security'
+            'href': '/api/tm/5.2/config/active/security',
+            'name': 'security'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/service_level_monitors/',
-            u'name': u'service_level_monitors'
+            'href': '/api/tm/5.2/config/active/service_level_monitors/',
+            'name': 'service_level_monitors'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/servicediscovery/',
-            u'name': u'servicediscovery'
+            'href': '/api/tm/5.2/config/active/servicediscovery/',
+            'name': 'servicediscovery'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/ssl/',
-            u'name': u'ssl'
+            'href': '/api/tm/5.2/config/active/ssl/',
+            'name': 'ssl'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/traffic_ip_groups/',
-            u'name': u'traffic_ip_groups'
+            'href': '/api/tm/5.2/config/active/traffic_ip_groups/',
+            'name': 'traffic_ip_groups'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/traffic_managers/',
-            u'name': u'traffic_managers'
+            'href': '/api/tm/5.2/config/active/traffic_managers/',
+            'name': 'traffic_managers'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/user_authenticators/',
-            u'name': u'user_authenticators'
+            'href': '/api/tm/5.2/config/active/user_authenticators/',
+            'name': 'user_authenticators'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/user_groups/',
-            u'name': u'user_groups'
+            'href': '/api/tm/5.2/config/active/user_groups/',
+            'name': 'user_groups'
         },
         {
-            u'href': u'/api/tm/5.2/config/active/virtual_servers/',
-            u'name': u'virtual_servers'
+            'href': '/api/tm/5.2/config/active/virtual_servers/',
+            'name': 'virtual_servers'
         }
     ]
 }
 
 config_endpoints_v1 = {
-    u'children': [
+    'children': [
         {
-            u'name': u'actionprogs',
-            u'href': u'/api/tm/1.0/config/active/actionprogs/'
+            'name': 'actionprogs',
+            'href': '/api/tm/1.0/config/active/actionprogs/'
         },
         {
-            u'name': u'actions',
-            u'href': u'/api/tm/1.0/config/active/actions/'
+            'name': 'actions',
+            'href': '/api/tm/1.0/config/active/actions/'
         },
         {
-            u'name': u'aptimizer',
-            u'href': u'/api/tm/1.0/config/active/aptimizer/'
+            'name': 'aptimizer',
+            'href': '/api/tm/1.0/config/active/aptimizer/'
         },
         {
-            u'name': u'auth',
-            u'href': u'/api/tm/1.0/config/active/auth/'
+            'name': 'auth',
+            'href': '/api/tm/1.0/config/active/auth/'
         },
         {
-            u'name': u'authenticators',
-            u'href': u'/api/tm/1.0/config/active/authenticators/'
+            'name': 'authenticators',
+            'href': '/api/tm/1.0/config/active/authenticators/'
         },
         {
-            u'name': u'bandwidth',
-            u'href': u'/api/tm/1.0/config/active/bandwidth/'
+            'name': 'bandwidth',
+            'href': '/api/tm/1.0/config/active/bandwidth/'
         },
         {
-            u'name': u'cloudcredentials',
-            u'href': u'/api/tm/1.0/config/active/cloudcredentials/'
+            'name': 'cloudcredentials',
+            'href': '/api/tm/1.0/config/active/cloudcredentials/'
         },
         {
-            u'name': u'events',
-            u'href': u'/api/tm/1.0/config/active/events/'
+            'name': 'events',
+            'href': '/api/tm/1.0/config/active/events/'
         },
         {
-            u'name': u'extra',
-            u'href': u'/api/tm/1.0/config/active/extra/'
+            'name': 'extra',
+            'href': '/api/tm/1.0/config/active/extra/'
         },
         {
-            u'name': u'flipper',
-            u'href': u'/api/tm/1.0/config/active/flipper/'
+            'name': 'flipper',
+            'href': '/api/tm/1.0/config/active/flipper/'
         },
         {
-            u'name': u'groups',
-            u'href': u'/api/tm/1.0/config/active/groups/'
+            'name': 'groups',
+            'href': '/api/tm/1.0/config/active/groups/'
         },
         {
-            u'name': u'licensekeys',
-            u'href': u'/api/tm/1.0/config/active/licensekeys/'
+            'name': 'licensekeys',
+            'href': '/api/tm/1.0/config/active/licensekeys/'
         },
         {
-            u'name': u'locations',
-            u'href': u'/api/tm/1.0/config/active/locations/'
+            'name': 'locations',
+            'href': '/api/tm/1.0/config/active/locations/'
         },
         {
-            u'name': u'monitors',
-            u'href': u'/api/tm/1.0/config/active/monitors/'
+            'name': 'monitors',
+            'href': '/api/tm/1.0/config/active/monitors/'
         },
         {
-            u'name': u'persistence',
-            u'href': u'/api/tm/1.0/config/active/persistence/'
+            'name': 'persistence',
+            'href': '/api/tm/1.0/config/active/persistence/'
         },
         {
-            u'name': u'pools',
-            u'href': u'/api/tm/1.0/config/active/pools/'
+            'name': 'pools',
+            'href': '/api/tm/1.0/config/active/pools/'
         },
         {
-            u'name': u'protection',
-            u'href': u'/api/tm/1.0/config/active/protection/'
+            'name': 'protection',
+            'href': '/api/tm/1.0/config/active/protection/'
         },
         {
-            u'name': u'rate',
-            u'href': u'/api/tm/1.0/config/active/rate/'
+            'name': 'rate',
+            'href': '/api/tm/1.0/config/active/rate/'
         },
         {
-            u'name': u'rules',
-            u'href': u'/api/tm/1.0/config/active/rules/'
+            'name': 'rules',
+            'href': '/api/tm/1.0/config/active/rules/'
         },
         {
-            u'name': u'scripts',
-            u'href': u'/api/tm/1.0/config/active/scripts/'
+            'name': 'scripts',
+            'href': '/api/tm/1.0/config/active/scripts/'
         },
         {
-            u'name': u'security',
-            u'href': u'/api/tm/1.0/config/active/security'
+            'name': 'security',
+            'href': '/api/tm/1.0/config/active/security'
         },
         {
-            u'name': u'services',
-            u'href': u'/api/tm/1.0/config/active/services/'
+            'name': 'services',
+            'href': '/api/tm/1.0/config/active/services/'
         },
         {
-            u'name': u'settings.cfg',
-            u'href': u'/api/tm/1.0/config/active/settings.cfg'
+            'name': 'settings.cfg',
+            'href': '/api/tm/1.0/config/active/settings.cfg'
         },
         {
-            u'name': u'slm',
-            u'href': u'/api/tm/1.0/config/active/slm/'
+            'name': 'slm',
+            'href': '/api/tm/1.0/config/active/slm/'
         },
         {
-            u'name': u'ssl',
-            u'href': u'/api/tm/1.0/config/active/ssl/'
+            'name': 'ssl',
+            'href': '/api/tm/1.0/config/active/ssl/'
         },
         {
-            u'name': u'vservers',
-            u'href': u'/api/tm/1.0/config/active/vservers/'
+            'name': 'vservers',
+            'href': '/api/tm/1.0/config/active/vservers/'
         },
         {
-            u'name': u'zxtms',
-            u'href': u'/api/tm/1.0/config/active/zxtms/'
+            'name': 'zxtms',
+            'href': '/api/tm/1.0/config/active/zxtms/'
         }
     ]
 }
 
 full_backups = {
-    u'children': [
+    'children': [
         {
-            u'name': u'Backup1',
-            u'href': u'/api/tm/5.2/status/local_tm/backups/full/Backup1'
+            'name': 'Backup1',
+            'href': '/api/tm/5.2/status/local_tm/backups/full/Backup1'
         }
     ]
 }
 
 get_backup = {
-    u'properties': {
-        u'backup': {
-            u'description': u'Test Backup',
-            u'time_stamp': 1530257980,
-            u'version': u'18.1',
+    'properties': {
+        'backup': {
+            'description': 'Test Backup',
+            'time_stamp': 1530257980,
+            'version': '18.1',
         }
     }
 }
 
 status_info = {
-    u'information': {
-        u'tm_version': u'18.1',
-        u'uuid': u'c8cd17b3-f23e-3601-84e9-0a71387cf724'
+    'information': {
+        'tm_version': '18.1',
+        'uuid': 'c8cd17b3-f23e-3601-84e9-0a71387cf724'
     }
 }
 
 statistics = {
-    u'children': [
+    'children': [
         {
-            u'name': u'actions',
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/actions/'
+            'name': 'actions',
+            'href': '/api/tm/5.2/status/local_tm/statistics/actions/'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/bandwidth/',
-            u'name': u'bandwidth'
+            'href': '/api/tm/5.2/status/local_tm/statistics/bandwidth/',
+            'name': 'bandwidth'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cache/',
-            u'name': u'cache'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cache/',
+            'name': 'cache'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cloud_api_credentials/',
-            u'name': u'cloud_api_credentials'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cloud_api_credentials/',
+            'name': 'cloud_api_credentials'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/connection_rate_limit/',
-            u'name': u'connection_rate_limit'
+            'href': '/api/tm/5.2/status/local_tm/statistics/connection_rate_limit/',
+            'name': 'connection_rate_limit'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/events/',
-            u'name': u'events'
+            'href': '/api/tm/5.2/status/local_tm/statistics/events/',
+            'name': 'events'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/extras/',
-            u'name': u'extras'
+            'href': '/api/tm/5.2/status/local_tm/statistics/extras/',
+            'name': 'extras'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/glb_services/',
-            u'name': u'glb_services'
+            'href': '/api/tm/5.2/status/local_tm/statistics/glb_services/',
+            'name': 'glb_services'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/globals',
-            u'name': u'globals'
+            'href': '/api/tm/5.2/status/local_tm/statistics/globals',
+            'name': 'globals'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/listen_ips/',
-            u'name': u'listen_ips'
+            'href': '/api/tm/5.2/status/local_tm/statistics/listen_ips/',
+            'name': 'listen_ips'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/locations/',
-            u'name': u'locations'
+            'href': '/api/tm/5.2/status/local_tm/statistics/locations/',
+            'name': 'locations'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/network_interface/',
-             u'name': u'network_interface'
+            'href': '/api/tm/5.2/status/local_tm/statistics/network_interface/',
+             'name': 'network_interface'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/nodes/',
-            u'name': u'nodes'
+            'href': '/api/tm/5.2/status/local_tm/statistics/nodes/',
+            'name': 'nodes'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/per_location_service/',
-            u'name': u'per_location_service'
+            'href': '/api/tm/5.2/status/local_tm/statistics/per_location_service/',
+            'name': 'per_location_service'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/per_node_slm/',
-            u'name': u'per_node_slm'
+            'href': '/api/tm/5.2/status/local_tm/statistics/per_node_slm/',
+            'name': 'per_node_slm'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/pools/',
-            u'name': u'pools'
+            'href': '/api/tm/5.2/status/local_tm/statistics/pools/',
+            'name': 'pools'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/rule_authenticators/',
-            u'name': u'rule_authenticators'
+            'href': '/api/tm/5.2/status/local_tm/statistics/rule_authenticators/',
+            'name': 'rule_authenticators'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/rules/',
-            u'name': u'rules'
+            'href': '/api/tm/5.2/status/local_tm/statistics/rules/',
+            'name': 'rules'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/service_level_monitors/',
-            u'name': u'service_level_monitors'
+            'href': '/api/tm/5.2/status/local_tm/statistics/service_level_monitors/',
+            'name': 'service_level_monitors'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/service_protection/',
-            u'name': u'service_protection'
+            'href': '/api/tm/5.2/status/local_tm/statistics/service_protection/',
+            'name': 'service_protection'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/ssl_ocsp_stapling',
-            u'name': u'ssl_ocsp_stapling'
+            'href': '/api/tm/5.2/status/local_tm/statistics/ssl_ocsp_stapling',
+            'name': 'ssl_ocsp_stapling'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/traffic_ips/',
-            u'name': u'traffic_ips'
+            'href': '/api/tm/5.2/status/local_tm/statistics/traffic_ips/',
+            'name': 'traffic_ips'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/virtual_servers/',
-            u'name': u'virtual_servers'
+            'href': '/api/tm/5.2/status/local_tm/statistics/virtual_servers/',
+            'name': 'virtual_servers'
         }
     ]
 }
 
 statistics_globals = {
-    u'statistics': {
-        u'analytics_transactions_dropped': 0,
-        u'analytics_transactions_exported': 0,
-        u'analytics_transactions_memory_usage': 0,
-        u'data_entries': 0,
-        u'data_memory_usage': 16861912,
-        u'events_seen': 184658,
-        u'hourly_peak_bytes_in_per_second': 333264,
-        u'hourly_peak_bytes_out_per_second': 11903631,
-        u'hourly_peak_requests_per_second': 128,
-        u'hourly_peak_ssl_connections_per_second': 63,
-        u'num_idle_connections': 1,
-        u'number_child_processes': 8,
-        u'number_dnsa_cache_hits': 0,
-        u'number_dnsa_requests': 0,
-        u'number_dnsptr_cache_hits': 0,
-        u'number_dnsptr_requests': 0,
-        u'number_snmp_bad_requests': 0,
-        u'number_snmp_get_bulk_requests': 0,
-        u'number_snmp_get_next_requests': 203357,
-        u'number_snmp_get_requests': 2125772,
-        u'number_snmp_unauthorised_requests': 0,
-        u'ssl_cipher_3des_decrypts': 118512,
-        u'ssl_cipher_3des_encrypts': 137376,
-        u'ssl_cipher_aes_decrypts': 1857008912,
-        u'ssl_cipher_aes_encrypts': 2674129360,
-        u'ssl_cipher_aes_gcm_decrypts': 1066250097,
-        u'ssl_cipher_aes_gcm_encrypts': 793920689,
-        u'ssl_cipher_decrypts': 2923377521,
-        u'ssl_cipher_des_decrypts': 0,
-        u'ssl_cipher_des_encrypts': 0,
-        u'ssl_cipher_dh_agreements': 106707,
-        u'ssl_cipher_dh_generates': 168128,
-        u'ssl_cipher_dsa_signs': 0,
-        u'ssl_cipher_dsa_verifies': 0,
-        u'ssl_cipher_ecdh_agreements': 58378,
-        u'ssl_cipher_ecdh_generates': 68913,
-        u'ssl_cipher_ecdsa_signs': 0,
-        u'ssl_cipher_ecdsa_verifies': 0,
-        u'ssl_cipher_encrypts': 3468187425,
-        u'ssl_cipher_rc4_decrypts': 0,
-        u'ssl_cipher_rc4_encrypts': 0,
-        u'ssl_cipher_rsa_decrypts': 45926258,
-        u'ssl_cipher_rsa_decrypts_external': 0,
-        u'ssl_cipher_rsa_encrypts': 237041,
-        u'ssl_cipher_rsa_encrypts_external': 0,
-        u'ssl_client_cert_expired': 0,
-        u'ssl_client_cert_invalid': 0,
-        u'ssl_client_cert_not_sent': 0,
-        u'ssl_client_cert_revoked': 0,
-        u'ssl_connections': 98340362,
-        u'ssl_handshake_sslv3': 0,
-        u'ssl_handshake_tlsv1': 226643,
-        u'ssl_handshake_tlsv11': 246797,
-        u'ssl_handshake_tlsv12': 99449636,
-        u'ssl_session_id_mem_cache_hit': 44833597,
-        u'ssl_session_id_mem_cache_miss': 298057,
-        u'sys_cpu_busy_percent': 3,
-        u'sys_cpu_idle_percent': 96,
-        u'sys_cpu_system_busy_percent': 0,
-        u'sys_cpu_user_busy_percent': 2,
-        u'sys_fds_free': 8385733,
-        u'sys_mem_buffered': 262,
-        u'sys_mem_free': 30268,
-        u'sys_mem_in_use': 1909,
-        u'sys_mem_swap_total': 859,
-        u'sys_mem_swapped': 0,
-        u'sys_mem_total': 32177,
-        u'time_last_config_update': 15594000,
-        u'total_backend_server_errors': 0,
-        u'total_bad_dns_packets': 0,
-        u'total_bytes_in': 590699663658,
-        u'total_bytes_out': 5387886961402,
-        u'total_conn': 100652767,
-        u'total_current_conn': 11,
-        u'total_dns_responses': 0,
-        u'total_requests': 513259483,
-        u'total_transactions': 0,
-        u'up_time': 690634000
+    'statistics': {
+        'analytics_transactions_dropped': 0,
+        'analytics_transactions_exported': 0,
+        'analytics_transactions_memory_usage': 0,
+        'data_entries': 0,
+        'data_memory_usage': 16861912,
+        'events_seen': 184658,
+        'hourly_peak_bytes_in_per_second': 333264,
+        'hourly_peak_bytes_out_per_second': 11903631,
+        'hourly_peak_requests_per_second': 128,
+        'hourly_peak_ssl_connections_per_second': 63,
+        'num_idle_connections': 1,
+        'number_child_processes': 8,
+        'number_dnsa_cache_hits': 0,
+        'number_dnsa_requests': 0,
+        'number_dnsptr_cache_hits': 0,
+        'number_dnsptr_requests': 0,
+        'number_snmp_bad_requests': 0,
+        'number_snmp_get_bulk_requests': 0,
+        'number_snmp_get_next_requests': 203357,
+        'number_snmp_get_requests': 2125772,
+        'number_snmp_unauthorised_requests': 0,
+        'ssl_cipher_3des_decrypts': 118512,
+        'ssl_cipher_3des_encrypts': 137376,
+        'ssl_cipher_aes_decrypts': 1857008912,
+        'ssl_cipher_aes_encrypts': 2674129360,
+        'ssl_cipher_aes_gcm_decrypts': 1066250097,
+        'ssl_cipher_aes_gcm_encrypts': 793920689,
+        'ssl_cipher_decrypts': 2923377521,
+        'ssl_cipher_des_decrypts': 0,
+        'ssl_cipher_des_encrypts': 0,
+        'ssl_cipher_dh_agreements': 106707,
+        'ssl_cipher_dh_generates': 168128,
+        'ssl_cipher_dsa_signs': 0,
+        'ssl_cipher_dsa_verifies': 0,
+        'ssl_cipher_ecdh_agreements': 58378,
+        'ssl_cipher_ecdh_generates': 68913,
+        'ssl_cipher_ecdsa_signs': 0,
+        'ssl_cipher_ecdsa_verifies': 0,
+        'ssl_cipher_encrypts': 3468187425,
+        'ssl_cipher_rc4_decrypts': 0,
+        'ssl_cipher_rc4_encrypts': 0,
+        'ssl_cipher_rsa_decrypts': 45926258,
+        'ssl_cipher_rsa_decrypts_external': 0,
+        'ssl_cipher_rsa_encrypts': 237041,
+        'ssl_cipher_rsa_encrypts_external': 0,
+        'ssl_client_cert_expired': 0,
+        'ssl_client_cert_invalid': 0,
+        'ssl_client_cert_not_sent': 0,
+        'ssl_client_cert_revoked': 0,
+        'ssl_connections': 98340362,
+        'ssl_handshake_sslv3': 0,
+        'ssl_handshake_tlsv1': 226643,
+        'ssl_handshake_tlsv11': 246797,
+        'ssl_handshake_tlsv12': 99449636,
+        'ssl_session_id_mem_cache_hit': 44833597,
+        'ssl_session_id_mem_cache_miss': 298057,
+        'sys_cpu_busy_percent': 3,
+        'sys_cpu_idle_percent': 96,
+        'sys_cpu_system_busy_percent': 0,
+        'sys_cpu_user_busy_percent': 2,
+        'sys_fds_free': 8385733,
+        'sys_mem_buffered': 262,
+        'sys_mem_free': 30268,
+        'sys_mem_in_use': 1909,
+        'sys_mem_swap_total': 859,
+        'sys_mem_swapped': 0,
+        'sys_mem_total': 32177,
+        'time_last_config_update': 15594000,
+        'total_backend_server_errors': 0,
+        'total_bad_dns_packets': 0,
+        'total_bytes_in': 590699663658,
+        'total_bytes_out': 5387886961402,
+        'total_conn': 100652767,
+        'total_current_conn': 11,
+        'total_dns_responses': 0,
+        'total_requests': 513259483,
+        'total_transactions': 0,
+        'up_time': 690634000
     }
 }
 
 cache_stats = {
-    u'children': [
+    'children': [
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cache/asp_session_cache',
-            u'name': u'asp_session_cache'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cache/asp_session_cache',
+            'name': 'asp_session_cache'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cache/ip_session_cache',
-            u'name': u'ip_session_cache'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cache/ip_session_cache',
+            'name': 'ip_session_cache'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cache/j2ee_session_cache',
-            u'name': u'j2ee_session_cache'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cache/j2ee_session_cache',
+            'name': 'j2ee_session_cache'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cache/ssl_cache',
-            u'name': u'ssl_cache'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cache/ssl_cache',
+            'name': 'ssl_cache'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cache/ssl_session_cache',
-            u'name': u'ssl_session_cache'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cache/ssl_session_cache',
+            'name': 'ssl_session_cache'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cache/uni_session_cache',
-            u'name': u'uni_session_cache'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cache/uni_session_cache',
+            'name': 'uni_session_cache'
         },
         {
-            u'href': u'/api/tm/5.2/status/local_tm/statistics/cache/web_cache',
-            u'name': u'web_cache'
+            'href': '/api/tm/5.2/status/local_tm/statistics/cache/web_cache',
+            'name': 'web_cache'
         }
     ]
 }
 
 web_cache = {
-    u'statistics': {
-        u'entries': 0,
-        u'hit_rate': 0,
-        u'hits': 0,
-        u'lookups': 0,
-        u'max_entries': 10000,
-        u'mem_maximum': 6589440,
-        u'mem_used': 0,
-        u'misses': 0,
-        u'oldest': 0,
-        u'url_store_allocated': 600,
-        u'url_store_free': 5360512,
-        u'url_store_size': 5361112,
-        u'url_store_total_allocations': 0,
-        u'url_store_total_failures': 0,
-        u'url_store_total_frees': 0
+    'statistics': {
+        'entries': 0,
+        'hit_rate': 0,
+        'hits': 0,
+        'lookups': 0,
+        'max_entries': 10000,
+        'mem_maximum': 6589440,
+        'mem_used': 0,
+        'misses': 0,
+        'oldest': 0,
+        'url_store_allocated': 600,
+        'url_store_free': 5360512,
+        'url_store_size': 5361112,
+        'url_store_total_allocations': 0,
+        'url_store_total_failures': 0,
+        'url_store_total_frees': 0
     }
 }
