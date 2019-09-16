@@ -42,7 +42,7 @@ def put_callback(request):
     new_tig = copy.deepcopy(ctigr.traffic_ip_group)
 
     for section in rdata:
-        for key, value in rdata[section].iteritems():
+        for key, value in rdata[section].items():
             new_tig[section][key] = value
 
     return (200, resp_headers, json.dumps(new_tig))

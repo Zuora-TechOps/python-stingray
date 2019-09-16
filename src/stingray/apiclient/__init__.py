@@ -137,7 +137,7 @@ class Client(object):
         path = self._api_path(endpoint)
 
         try:
-            print "Fetching path {0}".format(path)
+            print("Fetching path {0}".format(path))
             response = requests.get(
                 'https://{0}:{1}/api/tm/{2}'.format(
                     self.api_host,

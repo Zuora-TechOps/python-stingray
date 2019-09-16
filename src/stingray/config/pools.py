@@ -79,7 +79,7 @@ class Pools(Client):
 
         for prop in pool_props:
             pool_data['properties'].setdefault(prop, dict())
-            for key, value in pool_props[prop].iteritems():
+            for key, value in pool_props[prop].items():
                 pool_data['properties'][prop][key] = value
 
         for node in nodes:
@@ -195,7 +195,7 @@ class Pool(Client):
 
         """
         node_status = dict()
-        for node, node_values in self.nodes.iteritems():
+        for node, node_values in self.nodes.items():
             node_status[node] = dict(
                 state=node_values['state'],
             )

@@ -68,7 +68,7 @@ def put_callback(request):
     new_vs = copy.deepcopy(cvsr.get_vs)
 
     for section in rdata:
-        for key, value in rdata[section].iteritems():
+        for key, value in rdata[section].items():
             new_vs[section][key] = value
 
     return (200, resp_headers, json.dumps(new_vs))

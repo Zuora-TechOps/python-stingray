@@ -80,7 +80,7 @@ class VirtualServers(Client):
 
         for prop in server_props:
             virtual_server_data['properties'].setdefault(prop, dict())
-            for key, value in server_props[prop].iteritems():
+            for key, value in server_props[prop].items():
                 virtual_server_data['properties'][prop][key] = value
 
         add_virtual_server_response = self._api_put(

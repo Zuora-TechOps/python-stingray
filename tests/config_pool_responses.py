@@ -1,987 +1,987 @@
 list_pools = {
-    u'children': [
+    'children': [
         {
-            u'name': 'Pool1',
-            u'href': '/api/tm/5.2/config/active/pools/Pool1'
+            'name': 'Pool1',
+            'href': '/api/tm/5.2/config/active/pools/Pool1'
         },
         {
-            u'name': 'Pool2',
-            u'href': '/api/tm/5.2/config/active/pools/Pool2'
+            'name': 'Pool2',
+            'href': '/api/tm/5.2/config/active/pools/Pool2'
         },
         {
-            u'name': 'Pool3',
-            u'href': '/api/tm/5.2/config/active/pools/Pool3'
+            'name': 'Pool3',
+            'href': '/api/tm/5.2/config/active/pools/Pool3'
         }
     ]
 }
 
 list_pools_old = {
-    u'children': [
+    'children': [
         {
-            u'name': 'Pool1',
-            u'href': '/api/tm/2.0/config/active/pools/Pool1'
+            'name': 'Pool1',
+            'href': '/api/tm/2.0/config/active/pools/Pool1'
         },
         {
-            u'name': 'Pool2',
-            u'href': '/api/tm/2.0/config/active/pools/Pool2'
+            'name': 'Pool2',
+            'href': '/api/tm/2.0/config/active/pools/Pool2'
         },
         {
-            u'name': 'Pool3',
-            u'href': '/api/tm/2.0/config/active/pools/Pool3'
+            'name': 'Pool3',
+            'href': '/api/tm/2.0/config/active/pools/Pool3'
         }
     ]
 }
 
 get_pool = {
-    u'properties': {
-        u'auto_scaling': {
-            u'addnode_delaytime': 0,
-            u'cloud_credentials': u'',
-            u'cluster': u'',
-            u'data_center': u'',
-            u'data_store': u'',
-            u'enabled': False,
-            u'external': True,
-            u'hysteresis': 20,
-            u'imageid': u'',
-            u'ips_to_use': u'publicips',
-            u'last_node_idle_time': 3600,
-            u'max_nodes': 4,
-            u'min_nodes': 1,
-            u'name': u'',
-            u'port': 80,
-            u'refractory': 180,
-            u'response_time': 1000,
-            u'scale_down_level': 95,
-            u'scale_up_level': 40,
-            u'securitygroupids': [],
-            u'size_id': u'',
-            u'subnetids': []
+    'properties': {
+        'auto_scaling': {
+            'addnode_delaytime': 0,
+            'cloud_credentials': '',
+            'cluster': '',
+            'data_center': '',
+            'data_store': '',
+            'enabled': False,
+            'external': True,
+            'hysteresis': 20,
+            'imageid': '',
+            'ips_to_use': 'publicips',
+            'last_node_idle_time': 3600,
+            'max_nodes': 4,
+            'min_nodes': 1,
+            'name': '',
+            'port': 80,
+            'refractory': 180,
+            'response_time': 1000,
+            'scale_down_level': 95,
+            'scale_up_level': 40,
+            'securitygroupids': [],
+            'size_id': '',
+            'subnetids': []
         },
-        u'basic': {
-            u'bandwidth_class': u'',
-            u'failure_pool': u'',
-            u'max_connection_attempts': 0,
-            u'max_idle_connections_pernode': 50,
-            u'max_timed_out_connection_attempts': 2,
-            u'monitors': [u'Ping'],
-            u'node_close_with_rst': False,
-            u'node_connection_attempts': 3,
-            u'node_delete_behavior': u'immediate',
-            u'node_drain_to_delete_timeout': 0,
-            u'nodes_table': [
+        'basic': {
+            'bandwidth_class': '',
+            'failure_pool': '',
+            'max_connection_attempts': 0,
+            'max_idle_connections_pernode': 50,
+            'max_timed_out_connection_attempts': 2,
+            'monitors': ['Ping'],
+            'node_close_with_rst': False,
+            'node_connection_attempts': 3,
+            'node_delete_behavior': 'immediate',
+            'node_drain_to_delete_timeout': 0,
+            'nodes_table': [
                 {
-                    u'node': u'10.0.0.1:8000',
-                    u'state': u'active',
-                    u'priority': 1,
-                    u'weight': 1
+                    'node': '10.0.0.1:8000',
+                    'state': 'active',
+                    'priority': 1,
+                    'weight': 1
                 }
             ],
-            u'note': u'',
-            u'passive_monitoring': True,
-            u'persistence_class': u'',
-            u'transparent': False
+            'note': '',
+            'passive_monitoring': True,
+            'persistence_class': '',
+            'transparent': False
         },
-        u'connection': {
-            u'max_connect_time': 4,
-            u'max_connections_per_node': 0,
-            u'max_queue_size': 0,
-            u'max_reply_time': 30,
-            u'queue_timeout': 10
+        'connection': {
+            'max_connect_time': 4,
+            'max_connections_per_node': 0,
+            'max_queue_size': 0,
+            'max_reply_time': 30,
+            'queue_timeout': 10
         },
-        u'dns_autoscale': {
-            u'enabled': False,
-            u'hostnames': [],
-            u'port': 80
+        'dns_autoscale': {
+            'enabled': False,
+            'hostnames': [],
+            'port': 80
         },
-        u'ftp': {
-            u'support_rfc_2428': False
+        'ftp': {
+            'support_rfc_2428': False
         },
-        u'http': {
-            u'keepalive': True,
-            u'keepalive_non_idempotent': False
+        'http': {
+            'keepalive': True,
+            'keepalive_non_idempotent': False
         },
-        u'kerberos_protocol_transition': {
-            u'principal': u'',
-            u'target': u''
+        'kerberos_protocol_transition': {
+            'principal': '',
+            'target': ''
         },
-        u'l4accel': {
-            u'snat': False
+        'l4accel': {
+            'snat': False
         },
-        u'load_balancing': {
-            u'algorithm': u'round_robin',
-            u'priority_enabled': False,
-            u'priority_nodes': 1
+        'load_balancing': {
+            'algorithm': 'round_robin',
+            'priority_enabled': False,
+            'priority_nodes': 1
         },
-        u'node': {
-            u'close_on_death': False,
-            u'retry_fail_time': 60
+        'node': {
+            'close_on_death': False,
+            'retry_fail_time': 60
         },
-        u'service_discovery': {
-            u'enabled': False,
-            u'interval': 10,
-            u'plugin': u'',
-            u'plugin_args': u'',
-            u'timeout': 0
+        'service_discovery': {
+            'enabled': False,
+            'interval': 10,
+            'plugin': '',
+            'plugin_args': '',
+            'timeout': 0
         },
-        u'smtp': {
-            u'send_starttls': True
+        'smtp': {
+            'send_starttls': True
         },
-        u'ssl': {
-            u'cipher_suites': u'',
-            u'client_auth': False,
-            u'common_name_match': [],
-            u'elliptic_curves': [],
-            u'enable': False,
-            u'enhance': False,
-            u'send_close_alerts': True,
-            u'server_name': False,
-            u'session_cache_enabled': u'use_default',
-            u'session_tickets_enabled': u'use_default',
-            u'signature_algorithms': u'',
-            u'strict_verify': False,
-            u'support_ssl3': u'use_default',
-            u'support_tls1': u'use_default',
-            u'support_tls1_1': u'use_default',
-            u'support_tls1_2': u'use_default'
+        'ssl': {
+            'cipher_suites': '',
+            'client_auth': False,
+            'common_name_match': [],
+            'elliptic_curves': [],
+            'enable': False,
+            'enhance': False,
+            'send_close_alerts': True,
+            'server_name': False,
+            'session_cache_enabled': 'use_default',
+            'session_tickets_enabled': 'use_default',
+            'signature_algorithms': '',
+            'strict_verify': False,
+            'support_ssl3': 'use_default',
+            'support_tls1': 'use_default',
+            'support_tls1_1': 'use_default',
+            'support_tls1_2': 'use_default'
         },
-        u'tcp': {
-            u'nagle': True
+        'tcp': {
+            'nagle': True
         },
-        u'udp': {
-            u'accept_from': u'dest_only',
-            u'accept_from_mask': u'',
-            u'response_timeout': 0
+        'udp': {
+            'accept_from': 'dest_only',
+            'accept_from_mask': '',
+            'response_timeout': 0
         }
     }
 }
 
 two_nodes = {
-    u'properties': {
-        u'auto_scaling': {
-            u'addnode_delaytime': 0,
-            u'cloud_credentials': u'',
-            u'cluster': u'',
-            u'data_center': u'',
-            u'data_store': u'',
-            u'enabled': False,
-            u'external': True,
-            u'hysteresis': 20,
-            u'imageid': u'',
-            u'ips_to_use': u'publicips',
-            u'last_node_idle_time': 3600,
-            u'max_nodes': 4,
-            u'min_nodes': 1,
-            u'name': u'',
-            u'port': 80,
-            u'refractory': 180,
-            u'response_time': 1000,
-            u'scale_down_level': 95,
-            u'scale_up_level': 40,
-            u'securitygroupids': [],
-            u'size_id': u'',
-            u'subnetids': []
+    'properties': {
+        'auto_scaling': {
+            'addnode_delaytime': 0,
+            'cloud_credentials': '',
+            'cluster': '',
+            'data_center': '',
+            'data_store': '',
+            'enabled': False,
+            'external': True,
+            'hysteresis': 20,
+            'imageid': '',
+            'ips_to_use': 'publicips',
+            'last_node_idle_time': 3600,
+            'max_nodes': 4,
+            'min_nodes': 1,
+            'name': '',
+            'port': 80,
+            'refractory': 180,
+            'response_time': 1000,
+            'scale_down_level': 95,
+            'scale_up_level': 40,
+            'securitygroupids': [],
+            'size_id': '',
+            'subnetids': []
         },
-        u'basic': {
-            u'bandwidth_class': u'',
-            u'failure_pool': u'',
-            u'max_connection_attempts': 0,
-            u'max_idle_connections_pernode': 50,
-            u'max_timed_out_connection_attempts': 2,
-            u'monitors': [u'Ping'],
-            u'node_close_with_rst': False,
-            u'node_connection_attempts': 3,
-            u'node_delete_behavior': u'immediate',
-            u'node_drain_to_delete_timeout': 0,
-            u'nodes_table': [
+        'basic': {
+            'bandwidth_class': '',
+            'failure_pool': '',
+            'max_connection_attempts': 0,
+            'max_idle_connections_pernode': 50,
+            'max_timed_out_connection_attempts': 2,
+            'monitors': ['Ping'],
+            'node_close_with_rst': False,
+            'node_connection_attempts': 3,
+            'node_delete_behavior': 'immediate',
+            'node_drain_to_delete_timeout': 0,
+            'nodes_table': [
                 {
-                    u'node': u'10.0.0.1:8000',
-                    u'state': u'active',
-                    u'priority': 1,
-                    u'weight': 1
+                    'node': '10.0.0.1:8000',
+                    'state': 'active',
+                    'priority': 1,
+                    'weight': 1
                 },
                 {
-                    u'node': u'10.0.0.2:8000',
-                    u'state': u'active',
-                    u'priority': 1,
-                    u'weight': 1
+                    'node': '10.0.0.2:8000',
+                    'state': 'active',
+                    'priority': 1,
+                    'weight': 1
                 }
             ],
-            u'note': u'',
-            u'passive_monitoring': True,
-            u'persistence_class': u'',
-            u'transparent': False
+            'note': '',
+            'passive_monitoring': True,
+            'persistence_class': '',
+            'transparent': False
         },
-        u'connection': {
-            u'max_connect_time': 4,
-            u'max_connections_per_node': 0,
-            u'max_queue_size': 0,
-            u'max_reply_time': 30,
-            u'queue_timeout': 10
+        'connection': {
+            'max_connect_time': 4,
+            'max_connections_per_node': 0,
+            'max_queue_size': 0,
+            'max_reply_time': 30,
+            'queue_timeout': 10
         },
-        u'dns_autoscale': {
-            u'enabled': False,
-            u'hostnames': [],
-            u'port': 80
+        'dns_autoscale': {
+            'enabled': False,
+            'hostnames': [],
+            'port': 80
         },
-        u'ftp': {
-            u'support_rfc_2428': False
+        'ftp': {
+            'support_rfc_2428': False
         },
-        u'http': {
-            u'keepalive': True,
-            u'keepalive_non_idempotent': False
+        'http': {
+            'keepalive': True,
+            'keepalive_non_idempotent': False
         },
-        u'kerberos_protocol_transition': {
-            u'principal': u'',
-            u'target': u''
+        'kerberos_protocol_transition': {
+            'principal': '',
+            'target': ''
         },
-        u'l4accel': {
-            u'snat': False
+        'l4accel': {
+            'snat': False
         },
-        u'load_balancing': {
-            u'algorithm': u'round_robin',
-            u'priority_enabled': False,
-            u'priority_nodes': 1
+        'load_balancing': {
+            'algorithm': 'round_robin',
+            'priority_enabled': False,
+            'priority_nodes': 1
         },
-        u'node': {
-            u'close_on_death': False,
-            u'retry_fail_time': 60
+        'node': {
+            'close_on_death': False,
+            'retry_fail_time': 60
         },
-        u'service_discovery': {
-            u'enabled': False,
-            u'interval': 10,
-            u'plugin': u'',
-            u'plugin_args': u'',
-            u'timeout': 0
+        'service_discovery': {
+            'enabled': False,
+            'interval': 10,
+            'plugin': '',
+            'plugin_args': '',
+            'timeout': 0
         },
-        u'smtp': {
-            u'send_starttls': True
+        'smtp': {
+            'send_starttls': True
         },
-        u'ssl': {
-            u'cipher_suites': u'',
-            u'client_auth': False,
-            u'common_name_match': [],
-            u'elliptic_curves': [],
-            u'enable': False,
-            u'enhance': False,
-            u'send_close_alerts': True,
-            u'server_name': False,
-            u'session_cache_enabled': u'use_default',
-            u'session_tickets_enabled': u'use_default',
-            u'signature_algorithms': u'',
-            u'strict_verify': False,
-            u'support_ssl3': u'use_default',
-            u'support_tls1': u'use_default',
-            u'support_tls1_1': u'use_default',
-            u'support_tls1_2': u'use_default'
+        'ssl': {
+            'cipher_suites': '',
+            'client_auth': False,
+            'common_name_match': [],
+            'elliptic_curves': [],
+            'enable': False,
+            'enhance': False,
+            'send_close_alerts': True,
+            'server_name': False,
+            'session_cache_enabled': 'use_default',
+            'session_tickets_enabled': 'use_default',
+            'signature_algorithms': '',
+            'strict_verify': False,
+            'support_ssl3': 'use_default',
+            'support_tls1': 'use_default',
+            'support_tls1_1': 'use_default',
+            'support_tls1_2': 'use_default'
         },
-        u'tcp': {
-            u'nagle': True
+        'tcp': {
+            'nagle': True
         },
-        u'udp': {
-            u'accept_from': u'dest_only',
-            u'accept_from_mask': u'',
-            u'response_timeout': 0
+        'udp': {
+            'accept_from': 'dest_only',
+            'accept_from_mask': '',
+            'response_timeout': 0
         }
     }
 }
 
 drain_node = {
-    u'properties': {
-        u'auto_scaling': {
-            u'addnode_delaytime': 0,
-            u'cloud_credentials': u'',
-            u'cluster': u'',
-            u'data_center': u'',
-            u'data_store': u'',
-            u'enabled': False,
-            u'external': True,
-            u'hysteresis': 20,
-            u'imageid': u'',
-            u'ips_to_use': u'publicips',
-            u'last_node_idle_time': 3600,
-            u'max_nodes': 4,
-            u'min_nodes': 1,
-            u'name': u'',
-            u'port': 80,
-            u'refractory': 180,
-            u'response_time': 1000,
-            u'scale_down_level': 95,
-            u'scale_up_level': 40,
-            u'securitygroupids': [],
-            u'size_id': u'',
-            u'subnetids': []
+    'properties': {
+        'auto_scaling': {
+            'addnode_delaytime': 0,
+            'cloud_credentials': '',
+            'cluster': '',
+            'data_center': '',
+            'data_store': '',
+            'enabled': False,
+            'external': True,
+            'hysteresis': 20,
+            'imageid': '',
+            'ips_to_use': 'publicips',
+            'last_node_idle_time': 3600,
+            'max_nodes': 4,
+            'min_nodes': 1,
+            'name': '',
+            'port': 80,
+            'refractory': 180,
+            'response_time': 1000,
+            'scale_down_level': 95,
+            'scale_up_level': 40,
+            'securitygroupids': [],
+            'size_id': '',
+            'subnetids': []
         },
-        u'basic': {
-            u'bandwidth_class': u'',
-            u'failure_pool': u'',
-            u'max_connection_attempts': 0,
-            u'max_idle_connections_pernode': 50,
-            u'max_timed_out_connection_attempts': 2,
-            u'monitors': [u'Ping'],
-            u'node_close_with_rst': False,
-            u'node_connection_attempts': 3,
-            u'node_delete_behavior': u'immediate',
-            u'node_drain_to_delete_timeout': 0,
-            u'nodes_table': [
+        'basic': {
+            'bandwidth_class': '',
+            'failure_pool': '',
+            'max_connection_attempts': 0,
+            'max_idle_connections_pernode': 50,
+            'max_timed_out_connection_attempts': 2,
+            'monitors': ['Ping'],
+            'node_close_with_rst': False,
+            'node_connection_attempts': 3,
+            'node_delete_behavior': 'immediate',
+            'node_drain_to_delete_timeout': 0,
+            'nodes_table': [
                 {
-                    u'node': u'10.0.0.1:8000',
-                    u'state': u'draining',
-                    u'priority': 1,
-                    u'weight': 1
+                    'node': '10.0.0.1:8000',
+                    'state': 'draining',
+                    'priority': 1,
+                    'weight': 1
                 }
             ],
-            u'note': u'',
-            u'passive_monitoring': True,
-            u'persistence_class': u'',
-            u'transparent': False
+            'note': '',
+            'passive_monitoring': True,
+            'persistence_class': '',
+            'transparent': False
         },
-        u'connection': {
-            u'max_connect_time': 4,
-            u'max_connections_per_node': 0,
-            u'max_queue_size': 0,
-            u'max_reply_time': 30,
-            u'queue_timeout': 10
+        'connection': {
+            'max_connect_time': 4,
+            'max_connections_per_node': 0,
+            'max_queue_size': 0,
+            'max_reply_time': 30,
+            'queue_timeout': 10
         },
-        u'dns_autoscale': {
-            u'enabled': False,
-            u'hostnames': [],
-            u'port': 80
+        'dns_autoscale': {
+            'enabled': False,
+            'hostnames': [],
+            'port': 80
         },
-        u'ftp': {
-            u'support_rfc_2428': False
+        'ftp': {
+            'support_rfc_2428': False
         },
-        u'http': {
-            u'keepalive': True,
-            u'keepalive_non_idempotent': False
+        'http': {
+            'keepalive': True,
+            'keepalive_non_idempotent': False
         },
-        u'kerberos_protocol_transition': {
-            u'principal': u'',
-            u'target': u''
+        'kerberos_protocol_transition': {
+            'principal': '',
+            'target': ''
         },
-        u'l4accel': {
-            u'snat': False
+        'l4accel': {
+            'snat': False
         },
-        u'load_balancing': {
-            u'algorithm': u'round_robin',
-            u'priority_enabled': False,
-            u'priority_nodes': 1
+        'load_balancing': {
+            'algorithm': 'round_robin',
+            'priority_enabled': False,
+            'priority_nodes': 1
         },
-        u'node': {
-            u'close_on_death': False,
-            u'retry_fail_time': 60
+        'node': {
+            'close_on_death': False,
+            'retry_fail_time': 60
         },
-        u'service_discovery': {
-            u'enabled': False,
-            u'interval': 10,
-            u'plugin': u'',
-            u'plugin_args': u'',
-            u'timeout': 0
+        'service_discovery': {
+            'enabled': False,
+            'interval': 10,
+            'plugin': '',
+            'plugin_args': '',
+            'timeout': 0
         },
-        u'smtp': {
-            u'send_starttls': True
+        'smtp': {
+            'send_starttls': True
         },
-        u'ssl': {
-            u'cipher_suites': u'',
-            u'client_auth': False,
-            u'common_name_match': [],
-            u'elliptic_curves': [],
-            u'enable': False,
-            u'enhance': False,
-            u'send_close_alerts': True,
-            u'server_name': False,
-            u'session_cache_enabled': u'use_default',
-            u'session_tickets_enabled': u'use_default',
-            u'signature_algorithms': u'',
-            u'strict_verify': False,
-            u'support_ssl3': u'use_default',
-            u'support_tls1': u'use_default',
-            u'support_tls1_1': u'use_default',
-            u'support_tls1_2': u'use_default'
+        'ssl': {
+            'cipher_suites': '',
+            'client_auth': False,
+            'common_name_match': [],
+            'elliptic_curves': [],
+            'enable': False,
+            'enhance': False,
+            'send_close_alerts': True,
+            'server_name': False,
+            'session_cache_enabled': 'use_default',
+            'session_tickets_enabled': 'use_default',
+            'signature_algorithms': '',
+            'strict_verify': False,
+            'support_ssl3': 'use_default',
+            'support_tls1': 'use_default',
+            'support_tls1_1': 'use_default',
+            'support_tls1_2': 'use_default'
         },
-        u'tcp': {
-            u'nagle': True
+        'tcp': {
+            'nagle': True
         },
-        u'udp': {
-            u'accept_from': u'dest_only',
-            u'accept_from_mask': u'',
-            u'response_timeout': 0
+        'udp': {
+            'accept_from': 'dest_only',
+            'accept_from_mask': '',
+            'response_timeout': 0
         }
     }
 }
 
 disable_node = {
-    u'properties': {
-        u'auto_scaling': {
-            u'addnode_delaytime': 0,
-            u'cloud_credentials': u'',
-            u'cluster': u'',
-            u'data_center': u'',
-            u'data_store': u'',
-            u'enabled': False,
-            u'external': True,
-            u'hysteresis': 20,
-            u'imageid': u'',
-            u'ips_to_use': u'publicips',
-            u'last_node_idle_time': 3600,
-            u'max_nodes': 4,
-            u'min_nodes': 1,
-            u'name': u'',
-            u'port': 80,
-            u'refractory': 180,
-            u'response_time': 1000,
-            u'scale_down_level': 95,
-            u'scale_up_level': 40,
-            u'securitygroupids': [],
-            u'size_id': u'',
-            u'subnetids': []
+    'properties': {
+        'auto_scaling': {
+            'addnode_delaytime': 0,
+            'cloud_credentials': '',
+            'cluster': '',
+            'data_center': '',
+            'data_store': '',
+            'enabled': False,
+            'external': True,
+            'hysteresis': 20,
+            'imageid': '',
+            'ips_to_use': 'publicips',
+            'last_node_idle_time': 3600,
+            'max_nodes': 4,
+            'min_nodes': 1,
+            'name': '',
+            'port': 80,
+            'refractory': 180,
+            'response_time': 1000,
+            'scale_down_level': 95,
+            'scale_up_level': 40,
+            'securitygroupids': [],
+            'size_id': '',
+            'subnetids': []
         },
-        u'basic': {
-            u'bandwidth_class': u'',
-            u'failure_pool': u'',
-            u'max_connection_attempts': 0,
-            u'max_idle_connections_pernode': 50,
-            u'max_timed_out_connection_attempts': 2,
-            u'monitors': [u'Ping'],
-            u'node_close_with_rst': False,
-            u'node_connection_attempts': 3,
-            u'node_delete_behavior': u'immediate',
-            u'node_drain_to_delete_timeout': 0,
-            u'nodes_table': [
+        'basic': {
+            'bandwidth_class': '',
+            'failure_pool': '',
+            'max_connection_attempts': 0,
+            'max_idle_connections_pernode': 50,
+            'max_timed_out_connection_attempts': 2,
+            'monitors': ['Ping'],
+            'node_close_with_rst': False,
+            'node_connection_attempts': 3,
+            'node_delete_behavior': 'immediate',
+            'node_drain_to_delete_timeout': 0,
+            'nodes_table': [
                 {
-                    u'node': u'10.0.0.1:8000',
-                    u'state': u'disabled',
-                    u'priority': 1,
-                    u'weight': 1
+                    'node': '10.0.0.1:8000',
+                    'state': 'disabled',
+                    'priority': 1,
+                    'weight': 1
                 }
             ],
-            u'note': u'',
-            u'passive_monitoring': True,
-            u'persistence_class': u'',
-            u'transparent': False
+            'note': '',
+            'passive_monitoring': True,
+            'persistence_class': '',
+            'transparent': False
         },
-        u'connection': {
-            u'max_connect_time': 4,
-            u'max_connections_per_node': 0,
-            u'max_queue_size': 0,
-            u'max_reply_time': 30,
-            u'queue_timeout': 10
+        'connection': {
+            'max_connect_time': 4,
+            'max_connections_per_node': 0,
+            'max_queue_size': 0,
+            'max_reply_time': 30,
+            'queue_timeout': 10
         },
-        u'dns_autoscale': {
-            u'enabled': False,
-            u'hostnames': [],
-            u'port': 80
+        'dns_autoscale': {
+            'enabled': False,
+            'hostnames': [],
+            'port': 80
         },
-        u'ftp': {
-            u'support_rfc_2428': False
+        'ftp': {
+            'support_rfc_2428': False
         },
-        u'http': {
-            u'keepalive': True,
-            u'keepalive_non_idempotent': False
+        'http': {
+            'keepalive': True,
+            'keepalive_non_idempotent': False
         },
-        u'kerberos_protocol_transition': {
-            u'principal': u'',
-            u'target': u''
+        'kerberos_protocol_transition': {
+            'principal': '',
+            'target': ''
         },
-        u'l4accel': {
-            u'snat': False
+        'l4accel': {
+            'snat': False
         },
-        u'load_balancing': {
-            u'algorithm': u'round_robin',
-            u'priority_enabled': False,
-            u'priority_nodes': 1
+        'load_balancing': {
+            'algorithm': 'round_robin',
+            'priority_enabled': False,
+            'priority_nodes': 1
         },
-        u'node': {
-            u'close_on_death': False,
-            u'retry_fail_time': 60
+        'node': {
+            'close_on_death': False,
+            'retry_fail_time': 60
         },
-        u'service_discovery': {
-            u'enabled': False,
-            u'interval': 10,
-            u'plugin': u'',
-            u'plugin_args': u'',
-            u'timeout': 0
+        'service_discovery': {
+            'enabled': False,
+            'interval': 10,
+            'plugin': '',
+            'plugin_args': '',
+            'timeout': 0
         },
-        u'smtp': {
-            u'send_starttls': True
+        'smtp': {
+            'send_starttls': True
         },
-        u'ssl': {
-            u'cipher_suites': u'',
-            u'client_auth': False,
-            u'common_name_match': [],
-            u'elliptic_curves': [],
-            u'enable': False,
-            u'enhance': False,
-            u'send_close_alerts': True,
-            u'server_name': False,
-            u'session_cache_enabled': u'use_default',
-            u'session_tickets_enabled': u'use_default',
-            u'signature_algorithms': u'',
-            u'strict_verify': False,
-            u'support_ssl3': u'use_default',
-            u'support_tls1': u'use_default',
-            u'support_tls1_1': u'use_default',
-            u'support_tls1_2': u'use_default'
+        'ssl': {
+            'cipher_suites': '',
+            'client_auth': False,
+            'common_name_match': [],
+            'elliptic_curves': [],
+            'enable': False,
+            'enhance': False,
+            'send_close_alerts': True,
+            'server_name': False,
+            'session_cache_enabled': 'use_default',
+            'session_tickets_enabled': 'use_default',
+            'signature_algorithms': '',
+            'strict_verify': False,
+            'support_ssl3': 'use_default',
+            'support_tls1': 'use_default',
+            'support_tls1_1': 'use_default',
+            'support_tls1_2': 'use_default'
         },
-        u'tcp': {
-            u'nagle': True
+        'tcp': {
+            'nagle': True
         },
-        u'udp': {
-            u'accept_from': u'dest_only',
-            u'accept_from_mask': u'',
-            u'response_timeout': 0
+        'udp': {
+            'accept_from': 'dest_only',
+            'accept_from_mask': '',
+            'response_timeout': 0
         }
     }
 }
 
 pool_status = {
-    u'statistics': {
-        u'algorithm': u'roundrobin',
-        u'bw_limit_bytes_drop': 0,
-        u'bw_limit_pkts_drop': 0,
-        u'bytes_in': 0,
-        u'bytes_out': 0,
-        u'conns_queued': 0,
-        u'disabled': 0,
-        u'draining': 0,
-        u'max_queue_time': 0,
-        u'mean_queue_time': 0,
-        u'min_queue_time': 0,
-        u'nodes': 1,
-        u'persistence': u'none',
-        u'queue_timeouts': 0,
-        u'session_migrated': 0,
-        u'state': u'active',
-        u'total_conn': 0
+    'statistics': {
+        'algorithm': 'roundrobin',
+        'bw_limit_bytes_drop': 0,
+        'bw_limit_pkts_drop': 0,
+        'bytes_in': 0,
+        'bytes_out': 0,
+        'conns_queued': 0,
+        'disabled': 0,
+        'draining': 0,
+        'max_queue_time': 0,
+        'mean_queue_time': 0,
+        'min_queue_time': 0,
+        'nodes': 1,
+        'persistence': 'none',
+        'queue_timeouts': 0,
+        'session_migrated': 0,
+        'state': 'active',
+        'total_conn': 0
     }
 }
 
 nodes_status = {
-    u'statistics': {
-        u'current_conn': 0,
-        u'current_requests': 0,
-        u'errors': 0,
-        u'failures': 0,
-        u'new_conn': 0,
-        u'pooled_conn': 0,
-        u'port': 8000,
-        u'response_max': 0,
-        u'response_mean': 0,
-        u'response_min': 0,
-        u'state': u'alive',
-        u'total_conn': 0
+    'statistics': {
+        'current_conn': 0,
+        'current_requests': 0,
+        'errors': 0,
+        'failures': 0,
+        'new_conn': 0,
+        'pooled_conn': 0,
+        'port': 8000,
+        'response_max': 0,
+        'response_mean': 0,
+        'response_min': 0,
+        'state': 'alive',
+        'total_conn': 0
     }
 }
 
 get_pool_old = {
-    u'properties': {
-        u'auto_scaling': {
-            u'cloud_credentials': u'',
-            u'cluster': u'',
-            u'data_center': u'',
-            u'data_store': u'',
-            u'enabled': False,
-            u'external': True,
-            u'hysteresis': 20,
-            u'imageid': u'',
-            u'ips_to_use': u'publicips',
-            u'last_node_idle_time': 3600,
-            u'max_nodes': 4,
-            u'min_nodes': 1,
-            u'name': u'',
-            u'port': 80,
-            u'refractory': 180,
-            u'response_time': 1000,
-            u'scale_down_level': 95,
-            u'scale_up_level': 40,
-            u'size_id': u''
+    'properties': {
+        'auto_scaling': {
+            'cloud_credentials': '',
+            'cluster': '',
+            'data_center': '',
+            'data_store': '',
+            'enabled': False,
+            'external': True,
+            'hysteresis': 20,
+            'imageid': '',
+            'ips_to_use': 'publicips',
+            'last_node_idle_time': 3600,
+            'max_nodes': 4,
+            'min_nodes': 1,
+            'name': '',
+            'port': 80,
+            'refractory': 180,
+            'response_time': 1000,
+            'scale_down_level': 95,
+            'scale_up_level': 40,
+            'size_id': ''
         },
-        u'basic': {
-            u'bandwidth_class': u'',
-            u'disabled': [],
-            u'draining': [],
-            u'failure_pool': u'',
-            u'max_connection_attempts': 0,
-            u'max_idle_connections_pernode': 50,
-            u'max_timed_out_connection_attempts': 2,
-            u'monitors': [
-                u'Ping'
+        'basic': {
+            'bandwidth_class': '',
+            'disabled': [],
+            'draining': [],
+            'failure_pool': '',
+            'max_connection_attempts': 0,
+            'max_idle_connections_pernode': 50,
+            'max_timed_out_connection_attempts': 2,
+            'monitors': [
+                'Ping'
             ],
-            u'node_connection_attempts': 3,
-            u'nodes': [
-                u'10.0.0.1:8000',
-                u'10.0.0.2:8000'
+            'node_connection_attempts': 3,
+            'nodes': [
+                '10.0.0.1:8000',
+                '10.0.0.2:8000'
             ],
-            u'note': u'',
-            u'passive_monitoring': True,
-            u'persistence_class': u'',
-            u'transparent': False
+            'note': '',
+            'passive_monitoring': True,
+            'persistence_class': '',
+            'transparent': False
         },
-        u'connection': {
-            u'max_connect_time': 4,
-            u'max_connections_per_node': 0,
-            u'max_queue_size': 0,
-            u'max_reply_time': 30,
-            u'queue_timeout': 10
+        'connection': {
+            'max_connect_time': 4,
+            'max_connections_per_node': 0,
+            'max_queue_size': 0,
+            'max_reply_time': 30,
+            'queue_timeout': 10
         },
-        u'ftp': {
-            u'support_rfc_2428': False
+        'ftp': {
+            'support_rfc_2428': False
         },
-        u'http': {
-            u'keepalive': True,
-            u'keepalive_non_idempotent': False
+        'http': {
+            'keepalive': True,
+            'keepalive_non_idempotent': False
         },
-        u'load_balancing': {
-            u'algorithm': u'round_robin',
-            u'node_weighting': [
+        'load_balancing': {
+            'algorithm': 'round_robin',
+            'node_weighting': [
                 {
-                    u'node': u'10.0.0.1:8000',
-                    u'weight': 1
+                    'node': '10.0.0.1:8000',
+                    'weight': 1
                 },
                 {
-                    u'node': u'10.0.0.2:8000',
-                    u'weight': 1
+                    'node': '10.0.0.2:8000',
+                    'weight': 1
                 }
             ],
-            u'priority_enabled': False,
-            u'priority_nodes': 1,
-            u'priority_values': []
+            'priority_enabled': False,
+            'priority_nodes': 1,
+            'priority_values': []
         },
-        u'node': {
-            u'close_on_death': False,
-            u'retry_fail_time': 60
+        'node': {
+            'close_on_death': False,
+            'retry_fail_time': 60
         },
-        u'smtp': {
-            u'send_starttls': True
+        'smtp': {
+            'send_starttls': True
         },
-        u'ssl': {
-            u'client_auth': False,
-            u'enable': False,
-            u'enhance': False,
-            u'send_close_alerts': False,
-            u'server_name': False,
-            u'strict_verify': False
+        'ssl': {
+            'client_auth': False,
+            'enable': False,
+            'enhance': False,
+            'send_close_alerts': False,
+            'server_name': False,
+            'strict_verify': False
         },
-        u'tcp': {
-            u'nagle': True
+        'tcp': {
+            'nagle': True
         },
-        u'udp': {
-            u'accept_from': u'dest_only',
-            u'accept_from_mask': u''
+        'udp': {
+            'accept_from': 'dest_only',
+            'accept_from_mask': ''
         }
     }
 }
 
 get_pool_add_old = {
-    u'properties': {
-        u'auto_scaling': {
-            u'cloud_credentials': u'',
-            u'cluster': u'',
-            u'data_center': u'',
-            u'data_store': u'',
-            u'enabled': False,
-            u'external': True,
-            u'hysteresis': 20,
-            u'imageid': u'',
-            u'ips_to_use': u'publicips',
-            u'last_node_idle_time': 3600,
-            u'max_nodes': 4,
-            u'min_nodes': 1,
-            u'name': u'',
-            u'port': 80,
-            u'refractory': 180,
-            u'response_time': 1000,
-            u'scale_down_level': 95,
-            u'scale_up_level': 40,
-            u'size_id': u''
+    'properties': {
+        'auto_scaling': {
+            'cloud_credentials': '',
+            'cluster': '',
+            'data_center': '',
+            'data_store': '',
+            'enabled': False,
+            'external': True,
+            'hysteresis': 20,
+            'imageid': '',
+            'ips_to_use': 'publicips',
+            'last_node_idle_time': 3600,
+            'max_nodes': 4,
+            'min_nodes': 1,
+            'name': '',
+            'port': 80,
+            'refractory': 180,
+            'response_time': 1000,
+            'scale_down_level': 95,
+            'scale_up_level': 40,
+            'size_id': ''
         },
-        u'basic': {
-            u'bandwidth_class': u'',
-            u'disabled': [],
-            u'draining': [],
-            u'failure_pool': u'',
-            u'max_connection_attempts': 0,
-            u'max_idle_connections_pernode': 50,
-            u'max_timed_out_connection_attempts': 2,
-            u'monitors': [
-                u'Ping'
+        'basic': {
+            'bandwidth_class': '',
+            'disabled': [],
+            'draining': [],
+            'failure_pool': '',
+            'max_connection_attempts': 0,
+            'max_idle_connections_pernode': 50,
+            'max_timed_out_connection_attempts': 2,
+            'monitors': [
+                'Ping'
             ],
-            u'node_connection_attempts': 3,
-            u'nodes': [
-                u'10.0.0.1:8000',
-                u'10.0.0.2:8000',
-                u'10.0.0.3:8000'
+            'node_connection_attempts': 3,
+            'nodes': [
+                '10.0.0.1:8000',
+                '10.0.0.2:8000',
+                '10.0.0.3:8000'
             ],
-            u'note': u'',
-            u'passive_monitoring': True,
-            u'persistence_class': u'',
-            u'transparent': False
+            'note': '',
+            'passive_monitoring': True,
+            'persistence_class': '',
+            'transparent': False
         },
-        u'connection': {
-            u'max_connect_time': 4,
-            u'max_connections_per_node': 0,
-            u'max_queue_size': 0,
-            u'max_reply_time': 30,
-            u'queue_timeout': 10
+        'connection': {
+            'max_connect_time': 4,
+            'max_connections_per_node': 0,
+            'max_queue_size': 0,
+            'max_reply_time': 30,
+            'queue_timeout': 10
         },
-        u'ftp': {
-            u'support_rfc_2428': False
+        'ftp': {
+            'support_rfc_2428': False
         },
-        u'http': {
-            u'keepalive': True,
-            u'keepalive_non_idempotent': False
+        'http': {
+            'keepalive': True,
+            'keepalive_non_idempotent': False
         },
-        u'load_balancing': {
-            u'algorithm': u'round_robin',
-            u'node_weighting': [
+        'load_balancing': {
+            'algorithm': 'round_robin',
+            'node_weighting': [
                 {
-                    u'node': u'10.0.0.1:8000',
-                    u'weight': 1
+                    'node': '10.0.0.1:8000',
+                    'weight': 1
                 },
                 {
-                    u'node': u'10.0.0.2:8000',
-                    u'weight': 1
+                    'node': '10.0.0.2:8000',
+                    'weight': 1
                 },
                 {
-                    u'node': u'10.0.0.3:8000',
-                    u'weight': 1
+                    'node': '10.0.0.3:8000',
+                    'weight': 1
                 }
             ],
-            u'priority_enabled': False,
-            u'priority_nodes': 1,
-            u'priority_values': []
+            'priority_enabled': False,
+            'priority_nodes': 1,
+            'priority_values': []
         },
-        u'node': {
-            u'close_on_death': False,
-            u'retry_fail_time': 60
+        'node': {
+            'close_on_death': False,
+            'retry_fail_time': 60
         },
-        u'smtp': {
-            u'send_starttls': True
+        'smtp': {
+            'send_starttls': True
         },
-        u'ssl': {
-            u'client_auth': False,
-            u'enable': False,
-            u'enhance': False,
-            u'send_close_alerts': False,
-            u'server_name': False,
-            u'strict_verify': False
+        'ssl': {
+            'client_auth': False,
+            'enable': False,
+            'enhance': False,
+            'send_close_alerts': False,
+            'server_name': False,
+            'strict_verify': False
         },
-        u'tcp': {
-            u'nagle': True
+        'tcp': {
+            'nagle': True
         },
-        u'udp': {
-            u'accept_from': u'dest_only',
-            u'accept_from_mask': u''
+        'udp': {
+            'accept_from': 'dest_only',
+            'accept_from_mask': ''
         }
     }
 }
 
 drain_node_old = {
-    u'properties': {
-        u'auto_scaling': {
-            u'cloud_credentials': u'',
-            u'cluster': u'',
-            u'data_center': u'',
-            u'data_store': u'',
-            u'enabled': False,
-            u'external': True,
-            u'hysteresis': 20,
-            u'imageid': u'',
-            u'ips_to_use': u'publicips',
-            u'last_node_idle_time': 3600,
-            u'max_nodes': 4,
-            u'min_nodes': 1,
-            u'name': u'',
-            u'port': 80,
-            u'refractory': 180,
-            u'response_time': 1000,
-            u'scale_down_level': 95,
-            u'scale_up_level': 40,
-            u'size_id': u''
+    'properties': {
+        'auto_scaling': {
+            'cloud_credentials': '',
+            'cluster': '',
+            'data_center': '',
+            'data_store': '',
+            'enabled': False,
+            'external': True,
+            'hysteresis': 20,
+            'imageid': '',
+            'ips_to_use': 'publicips',
+            'last_node_idle_time': 3600,
+            'max_nodes': 4,
+            'min_nodes': 1,
+            'name': '',
+            'port': 80,
+            'refractory': 180,
+            'response_time': 1000,
+            'scale_down_level': 95,
+            'scale_up_level': 40,
+            'size_id': ''
         },
-        u'basic': {
-            u'bandwidth_class': u'',
-            u'disabled': [],
-            u'draining': [
-                u'10.0.0.1:8000'
+        'basic': {
+            'bandwidth_class': '',
+            'disabled': [],
+            'draining': [
+                '10.0.0.1:8000'
             ],
-            u'failure_pool': u'',
-            u'max_connection_attempts': 0,
-            u'max_idle_connections_pernode': 50,
-            u'max_timed_out_connection_attempts': 2,
-            u'monitors': [
-                u'Ping'
+            'failure_pool': '',
+            'max_connection_attempts': 0,
+            'max_idle_connections_pernode': 50,
+            'max_timed_out_connection_attempts': 2,
+            'monitors': [
+                'Ping'
             ],
-            u'node_connection_attempts': 3,
-            u'nodes': [
-                u'10.0.0.2:8000',
-                u'10.0.0.3:8000'
+            'node_connection_attempts': 3,
+            'nodes': [
+                '10.0.0.2:8000',
+                '10.0.0.3:8000'
             ],
-            u'note': u'',
-            u'passive_monitoring': True,
-            u'persistence_class': u'',
-            u'transparent': False
+            'note': '',
+            'passive_monitoring': True,
+            'persistence_class': '',
+            'transparent': False
         },
-        u'connection': {
-            u'max_connect_time': 4,
-            u'max_connections_per_node': 0,
-            u'max_queue_size': 0,
-            u'max_reply_time': 30,
-            u'queue_timeout': 10
+        'connection': {
+            'max_connect_time': 4,
+            'max_connections_per_node': 0,
+            'max_queue_size': 0,
+            'max_reply_time': 30,
+            'queue_timeout': 10
         },
-        u'ftp': {
-            u'support_rfc_2428': False
+        'ftp': {
+            'support_rfc_2428': False
         },
-        u'http': {
-            u'keepalive': True,
-            u'keepalive_non_idempotent': False
+        'http': {
+            'keepalive': True,
+            'keepalive_non_idempotent': False
         },
-        u'load_balancing': {
-            u'algorithm': u'round_robin',
-            u'node_weighting': [
+        'load_balancing': {
+            'algorithm': 'round_robin',
+            'node_weighting': [
                 {
-                    u'node': u'10.0.0.1:8000',
-                    u'weight': 1
+                    'node': '10.0.0.1:8000',
+                    'weight': 1
                 },
                 {
-                    u'node': u'10.0.0.2:8000',
-                    u'weight': 1
+                    'node': '10.0.0.2:8000',
+                    'weight': 1
                 },
                 {
-                    u'node': u'10.0.0.3:8000',
-                    u'weight': 1
+                    'node': '10.0.0.3:8000',
+                    'weight': 1
                 }
             ],
-            u'priority_enabled': False,
-            u'priority_nodes': 1,
-            u'priority_values': []
+            'priority_enabled': False,
+            'priority_nodes': 1,
+            'priority_values': []
         },
-        u'node': {
-            u'close_on_death': False,
-            u'retry_fail_time': 60
+        'node': {
+            'close_on_death': False,
+            'retry_fail_time': 60
         },
-        u'smtp': {
-            u'send_starttls': True
+        'smtp': {
+            'send_starttls': True
         },
-        u'ssl': {
-            u'client_auth': False,
-            u'enable': False,
-            u'enhance': False,
-            u'send_close_alerts': False,
-            u'server_name': False,
-            u'strict_verify': False
+        'ssl': {
+            'client_auth': False,
+            'enable': False,
+            'enhance': False,
+            'send_close_alerts': False,
+            'server_name': False,
+            'strict_verify': False
         },
-        u'tcp': {
-            u'nagle': True
+        'tcp': {
+            'nagle': True
         },
-        u'udp': {
-            u'accept_from': u'dest_only',
-            u'accept_from_mask': u''
+        'udp': {
+            'accept_from': 'dest_only',
+            'accept_from_mask': ''
         }
     }
 }
 
 disable_node_old = {
-    u'properties': {
-        u'auto_scaling': {
-            u'cloud_credentials': u'',
-            u'cluster': u'',
-            u'data_center': u'',
-            u'data_store': u'',
-            u'enabled': False,
-            u'external': True,
-            u'hysteresis': 20,
-            u'imageid': u'',
-            u'ips_to_use': u'publicips',
-            u'last_node_idle_time': 3600,
-            u'max_nodes': 4,
-            u'min_nodes': 1,
-            u'name': u'',
-            u'port': 80,
-            u'refractory': 180,
-            u'response_time': 1000,
-            u'scale_down_level': 95,
-            u'scale_up_level': 40,
-            u'size_id': u''
+    'properties': {
+        'auto_scaling': {
+            'cloud_credentials': '',
+            'cluster': '',
+            'data_center': '',
+            'data_store': '',
+            'enabled': False,
+            'external': True,
+            'hysteresis': 20,
+            'imageid': '',
+            'ips_to_use': 'publicips',
+            'last_node_idle_time': 3600,
+            'max_nodes': 4,
+            'min_nodes': 1,
+            'name': '',
+            'port': 80,
+            'refractory': 180,
+            'response_time': 1000,
+            'scale_down_level': 95,
+            'scale_up_level': 40,
+            'size_id': ''
         },
-        u'basic': {
-            u'bandwidth_class': u'',
-            u'disabled': [
-                u'10.0.0.1:8000'
+        'basic': {
+            'bandwidth_class': '',
+            'disabled': [
+                '10.0.0.1:8000'
             ],
-            u'draining': [],
-            u'failure_pool': u'',
-            u'max_connection_attempts': 0,
-            u'max_idle_connections_pernode': 50,
-            u'max_timed_out_connection_attempts': 2,
-            u'monitors': [
-                u'Ping'
+            'draining': [],
+            'failure_pool': '',
+            'max_connection_attempts': 0,
+            'max_idle_connections_pernode': 50,
+            'max_timed_out_connection_attempts': 2,
+            'monitors': [
+                'Ping'
             ],
-            u'node_connection_attempts': 3,
-            u'nodes': [
-                u'10.0.0.2:8000',
-                u'10.0.0.3:8000'
+            'node_connection_attempts': 3,
+            'nodes': [
+                '10.0.0.2:8000',
+                '10.0.0.3:8000'
             ],
-            u'note': u'',
-            u'passive_monitoring': True,
-            u'persistence_class': u'',
-            u'transparent': False
+            'note': '',
+            'passive_monitoring': True,
+            'persistence_class': '',
+            'transparent': False
         },
-        u'connection': {
-            u'max_connect_time': 4,
-            u'max_connections_per_node': 0,
-            u'max_queue_size': 0,
-            u'max_reply_time': 30,
-            u'queue_timeout': 10
+        'connection': {
+            'max_connect_time': 4,
+            'max_connections_per_node': 0,
+            'max_queue_size': 0,
+            'max_reply_time': 30,
+            'queue_timeout': 10
         },
-        u'ftp': {
-            u'support_rfc_2428': False
+        'ftp': {
+            'support_rfc_2428': False
         },
-        u'http': {
-            u'keepalive': True,
-            u'keepalive_non_idempotent': False
+        'http': {
+            'keepalive': True,
+            'keepalive_non_idempotent': False
         },
-        u'load_balancing': {
-            u'algorithm': u'round_robin',
-            u'node_weighting': [
+        'load_balancing': {
+            'algorithm': 'round_robin',
+            'node_weighting': [
                 {
-                    u'node': u'10.0.0.1:8000',
-                    u'weight': 1
+                    'node': '10.0.0.1:8000',
+                    'weight': 1
                 },
                 {
-                    u'node': u'10.0.0.2:8000',
-                    u'weight': 1
+                    'node': '10.0.0.2:8000',
+                    'weight': 1
                 },
                 {
-                    u'node': u'10.0.0.3:8000',
-                    u'weight': 1
+                    'node': '10.0.0.3:8000',
+                    'weight': 1
                 }
             ],
-            u'priority_enabled': False,
-            u'priority_nodes': 1,
-            u'priority_values': []
+            'priority_enabled': False,
+            'priority_nodes': 1,
+            'priority_values': []
         },
-        u'node': {
-            u'close_on_death': False,
-            u'retry_fail_time': 60
+        'node': {
+            'close_on_death': False,
+            'retry_fail_time': 60
         },
-        u'smtp': {
-            u'send_starttls': True
+        'smtp': {
+            'send_starttls': True
         },
-        u'ssl': {
-            u'client_auth': False,
-            u'enable': False,
-            u'enhance': False,
-            u'send_close_alerts': False,
-            u'server_name': False,
-            u'strict_verify': False
+        'ssl': {
+            'client_auth': False,
+            'enable': False,
+            'enhance': False,
+            'send_close_alerts': False,
+            'server_name': False,
+            'strict_verify': False
         },
-        u'tcp': {
-            u'nagle': True
+        'tcp': {
+            'nagle': True
         },
-        u'udp': {
-            u'accept_from': u'dest_only',
-            u'accept_from_mask': u''
+        'udp': {
+            'accept_from': 'dest_only',
+            'accept_from_mask': ''
         }
     }
 }
